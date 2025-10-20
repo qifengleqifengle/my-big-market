@@ -1,5 +1,5 @@
 spring:
   config:
-    name: xfg-frame-archetype-lite-app
+    name: big-market-app
   profiles:
     active: dev

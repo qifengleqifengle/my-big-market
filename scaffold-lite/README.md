@@ -78,7 +78,7 @@ mvn org.apache.maven.plugins:maven-archetype-plugin:2.4:generate
 │       └── mysql
 │           ├── docker-compose.yml
 │           └── sql
-│               └── xfg-frame-archetype.sql
+│               └── big_market.sql
 ├── pom.xml
 ├── xfg-ddd-app
 │   ├── Dockerfile
