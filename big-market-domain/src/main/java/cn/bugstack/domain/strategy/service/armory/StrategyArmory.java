@@ -62,7 +62,7 @@ public class StrategyArmory implements IStrategyArmory {
         }
 
         // 8. 存储到redis中去
-        repository.storeStrategyAwardSearchRateTable(strategyId, rateRange, shuffleStrategyAwardSearchRateTables);
+        repository.storeStrategyAwardSearchRateTable(strategyId, BigDecimal.valueOf(shuffleStrategyAwardSearchRateTables.size()) , shuffleStrategyAwardSearchRateTables);
 
     }
 

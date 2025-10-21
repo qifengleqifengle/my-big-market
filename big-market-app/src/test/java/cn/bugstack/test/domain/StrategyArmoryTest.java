@@ -19,14 +19,14 @@ public class StrategyArmoryTest {
 
     @Test
     public void test_strategyArmory() {
-        strategyArmory.assembleLotteryStrategy(100002L);
+        strategyArmory.assembleLotteryStrategy(10002L);
     }
 
     @Test
     public void test_getAssembleRandomVal() {
-        log.info("测试结果：{} - 奖品ID值", strategyArmory.getRandomAwardId(100002L));
-        log.info("测试结果：{} - 奖品ID值", strategyArmory.getRandomAwardId(100002L));
-        log.info("测试结果：{} - 奖品ID值", strategyArmory.getRandomAwardId(100002L));
+        log.info("测试结果：{} - 奖品ID值", strategyArmory.getRandomAwardId(10002L));
+        log.info("测试结果：{} - 奖品ID值", strategyArmory.getRandomAwardId(10002L));
+        log.info("测试结果：{} - 奖品ID值", strategyArmory.getRandomAwardId(10002L));
     }
 
 
