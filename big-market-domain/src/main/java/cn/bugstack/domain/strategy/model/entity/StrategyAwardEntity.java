@@ -11,6 +11,7 @@ import java.math.BigDecimal;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+// 抽奖策略奖品实体
 public class StrategyAwardEntity {
 
     //抽奖策略ID

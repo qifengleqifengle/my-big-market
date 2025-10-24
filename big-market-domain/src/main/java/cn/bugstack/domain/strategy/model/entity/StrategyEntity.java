@@ -11,6 +11,7 @@ import org.apache.commons.lang3.StringUtils;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+// 抽奖策略实体
 public class StrategyEntity {
 
     //抽奖策略ID

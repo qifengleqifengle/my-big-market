@@ -15,6 +15,7 @@ import java.util.Map;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
+// 抽奖策略规则实体
 public class StrategyRuleEntity {
 
     //抽奖策略ID
@@ -30,6 +31,7 @@ public class StrategyRuleEntity {
     //规则描述
     private String ruleDesc;
 
+    // 规则值转换成Map
     public Map<String, List<Integer>> getRuleValueMap() {
         if(!"rule_weight".equals(ruleModel)){
             return null;

@@ -1,99 +1,100 @@
-25-10-22.15:46:35.148 [main            ] INFO  StrategyTest           - Starting StrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 17256 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
-25-10-22.15:46:35.150 [main            ] INFO  StrategyTest           - The following 1 profile is active: "dev"
-25-10-22.15:46:36.589 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-10-22.15:46:36.596 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-10-22.15:46:36.637 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-25-10-22.15:46:39.301 [main            ] INFO  Version                - Redisson 3.23.4
-25-10-22.15:46:40.423 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
-25-10-22.15:46:40.457 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
-25-10-22.15:46:44.033 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-10-22.15:46:44.140 [main            ] INFO  StrategyTest           - Started StrategyTest in 9.839 seconds (JVM running for 11.655)
-25-10-22.15:46:45.512 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-10-22.15:46:46.408 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-10-22.15:46:46.779 [main            ] INFO  StrategyTest           - 测试结果：true
-25-10-22.15:47:57.138 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s618ms609µs600ns).
-25-10-22.15:48:50.313 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s175ms880µs900ns).
-25-10-22.15:50:08.164 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m17s852ms40µs500ns).
-25-10-22.15:50:08.295 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-10-22.15:50:08.322 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-10-22.15:50:16.326 [main            ] INFO  StrategyTest           - Starting StrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 36564 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
-25-10-22.15:50:16.330 [main            ] INFO  StrategyTest           - The following 1 profile is active: "dev"
-25-10-22.15:50:17.702 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-10-22.15:50:17.708 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-10-22.15:50:17.754 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-25-10-22.15:50:20.015 [main            ] INFO  Version                - Redisson 3.23.4
-25-10-22.15:50:21.398 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
-25-10-22.15:50:21.443 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
-25-10-22.15:50:25.818 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-10-22.15:50:25.921 [main            ] INFO  StrategyTest           - Started StrategyTest in 10.29 seconds (JVM running for 11.791)
-25-10-22.15:50:27.440 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-10-22.15:50:28.297 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-10-22.15:50:28.604 [main            ] INFO  StrategyTest           - 测试结果：true
-25-10-22.15:50:39.487 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-10-22.15:50:39.514 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-10-22.15:50:57.018 [main            ] INFO  StrategyTest           - Starting StrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 24408 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
-25-10-22.15:50:57.020 [main            ] INFO  StrategyTest           - The following 1 profile is active: "dev"
-25-10-22.15:50:58.430 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-10-22.15:50:58.440 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-10-22.15:50:58.501 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
-25-10-22.15:51:00.783 [main            ] INFO  Version                - Redisson 3.23.4
-25-10-22.15:51:02.069 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
-25-10-22.15:51:02.094 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
-25-10-22.15:51:06.197 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-10-22.15:51:06.377 [main            ] INFO  StrategyTest           - Started StrategyTest in 10.111 seconds (JVM running for 11.619)
-25-10-22.15:51:08.147 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-10-22.15:51:08.955 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-10-22.15:51:09.309 [main            ] INFO  StrategyTest           - 测试结果：true
-25-10-22.15:51:38.446 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-10-22.15:51:38.471 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-10-22.16:01:16.479 [main            ] INFO  StrategyTest           - Starting StrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 9080 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
-25-10-22.16:01:16.480 [main            ] INFO  StrategyTest           - The following 1 profile is active: "dev"
-25-10-22.16:01:17.632 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-10-22.16:01:17.638 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-10-22.16:01:17.686 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
-25-10-22.16:01:19.239 [main            ] INFO  Version                - Redisson 3.23.4
-25-10-22.16:01:19.880 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
-25-10-22.16:01:19.915 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
-25-10-22.16:01:22.553 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-10-22.16:01:22.636 [main            ] INFO  StrategyTest           - Started StrategyTest in 6.694 seconds (JVM running for 7.823)
-25-10-22.16:01:22.968 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-10-22.16:01:23.441 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-10-22.16:01:23.761 [main            ] INFO  StrategyTest           - 测试结果：true
-25-10-22.16:01:23.837 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-10-22.16:01:23.864 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-10-22.17:41:33.347 [main            ] INFO  StrategyTest           - Starting StrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 37612 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
-25-10-22.17:41:33.349 [main            ] INFO  StrategyTest           - The following 1 profile is active: "dev"
-25-10-22.17:41:34.500 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-10-22.17:41:34.505 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-10-22.17:41:34.538 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-25-10-22.17:41:36.048 [main            ] INFO  Version                - Redisson 3.23.4
-25-10-22.17:41:36.841 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
-25-10-22.17:41:36.874 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
-25-10-22.17:41:39.261 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-10-22.17:41:39.344 [main            ] INFO  StrategyTest           - Started StrategyTest in 6.497 seconds (JVM running for 7.624)
-25-10-22.17:41:39.696 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-10-22.17:41:40.088 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-10-22.17:41:40.433 [main            ] INFO  StrategyTest           - 测试结果：true
-25-10-22.17:41:40.447 [main            ] INFO  StrategyTest           - 测试结果：102 - 4000 策略配置
-25-10-22.17:41:40.453 [main            ] INFO  StrategyTest           - 测试结果：102 - 5000 策略配置
-25-10-22.17:41:40.459 [main            ] INFO  StrategyTest           - 测试结果：102 - 6000 策略配置
-25-10-22.17:41:40.512 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-10-22.17:41:40.537 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-10-22.17:42:28.213 [main            ] INFO  StrategyTest           - Starting StrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 4052 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
-25-10-22.17:42:28.215 [main            ] INFO  StrategyTest           - The following 1 profile is active: "dev"
-25-10-22.17:42:29.509 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-10-22.17:42:29.514 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-10-22.17:42:29.558 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-25-10-22.17:42:31.375 [main            ] INFO  Version                - Redisson 3.23.4
-25-10-22.17:42:32.117 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
-25-10-22.17:42:32.149 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
-25-10-22.17:42:34.683 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-10-22.17:42:34.773 [main            ] INFO  StrategyTest           - Started StrategyTest in 7.277 seconds (JVM running for 8.475)
-25-10-22.17:42:35.301 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-10-22.17:42:35.734 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-10-22.17:42:35.833 [main            ] INFO  StrategyTest           - 测试结果：true
-25-10-22.17:42:35.843 [main            ] INFO  StrategyTest           - 测试结果：102 - 4000 策略配置
-25-10-22.17:42:35.849 [main            ] INFO  StrategyTest           - 测试结果：102 - 5000 策略配置
-25-10-22.17:42:35.854 [main            ] INFO  StrategyTest           - 测试结果：106 - 6000 策略配置
-25-10-22.17:42:35.913 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-10-22.17:42:35.936 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-10-24.09:46:31.819 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 18012 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-10-24.09:46:31.821 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-10-24.09:46:33.407 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-10-24.09:46:33.417 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-10-24.09:46:33.478 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
+25-10-24.09:46:36.282 [main            ] INFO  Version                - Redisson 3.23.4
+25-10-24.09:46:37.459 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-10-24.09:46:37.497 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-10-24.09:47:13.545 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-10-24.09:47:13.651 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 42.585 seconds (JVM running for 44.357)
+25-10-24.09:56:51.028 [main            ] INFO  RuleBlackListLogicFilter - 规则过滤-黑名单 userId:xiaofuge strategyId:100001 ruleModel:rule_blacklist
+25-10-24.09:58:07.399 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-10-24.09:58:09.521 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-10-24.10:01:32.366 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m40s611ms853µs800ns).
+25-10-24.10:02:20.846 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s482ms592µs800ns).
+25-10-24.10:05:58.491 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m37s646ms269µs600ns).
+25-10-24.10:06:56.480 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s985ms362µs100ns).
+25-10-24.10:08:02.531 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m6s52ms940µs900ns).
+25-10-24.10:08:02.544 [main            ] INFO  RuleWeightLogicFilter  - 规则权重逻辑过滤器 userId：xiaofuge strategyId：100001 ruleModel:rule_weight
+25-10-24.10:07:28.978 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x288faa10, L:/127.0.0.1:57314 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-10-24.10:09:12.152 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s621ms501µs600ns).
+25-10-24.10:10:14.646 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m2s494ms425µs800ns).
+25-10-24.10:10:39.611 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0xf91cbabc, L:/127.0.0.1:55580 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-10-24.10:12:04.658 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m50s12ms249µs300ns).
+25-10-24.10:13:52.860 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m48s200ms849µs).
+25-10-24.10:15:34.902 [main            ] INFO  DefaultRaffleStrategy  - 抽奖前规则过滤 userId:xiaofuge ruleModel:rule_weight code:0001 info:接管；后续的流程，受规则引擎执行结果影响
+25-10-24.10:16:02.468 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s353ms328µs100ns).
+25-10-24.10:16:02.476 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x33229836, L:/127.0.0.1:57311 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-10-24.10:16:02.482 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x8615f778, L:/127.0.0.1:57312 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-10-24.10:19:50.700 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m13s107ms369µs600ns).
+25-10-24.10:19:50.702 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0xdd8c35e6, L:/127.0.0.1:57313 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-10-24.10:21:17.298 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m26s597ms706µs200ns).
+25-10-24.10:22:02.483 [main            ] INFO  RaffleStrategyTest     - 请求参数:{"strategyId":100001,"userId":"xiaofuge"}
+25-10-24.10:22:04.234 [main            ] INFO  RaffleStrategyTest     - 抽奖结果:{"awardId":102}
+25-10-24.10:22:10.223 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-10-24.10:22:10.253 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-10-24.10:29:58.984 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 28160 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-10-24.10:29:58.986 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-10-24.10:30:00.435 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-10-24.10:30:00.442 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-10-24.10:30:00.498 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+25-10-24.10:30:03.287 [main            ] INFO  Version                - Redisson 3.23.4
+25-10-24.10:30:04.233 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-10-24.10:30:04.266 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-10-24.10:30:16.273 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-10-24.10:30:16.360 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 18.247 seconds (JVM running for 19.899)
+25-10-24.10:33:02.783 [main            ] INFO  RuleBlackListLogicFilter - 规则过滤-黑名单 userId:user003 strategyId:100001 ruleModel:rule_blacklist
+25-10-24.10:33:06.309 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-10-24.10:33:08.210 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-10-24.10:35:06.142 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53s234ms96µs900ns).
+25-10-24.10:37:14.753 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m32s400ms698µs600ns).
+25-10-24.10:37:19.039 [main            ] INFO  RaffleStrategyTest     - 请求参数:{"strategyId":100001,"userId":"user003"}
+25-10-24.10:37:19.975 [main            ] INFO  RaffleStrategyTest     - 抽奖结果:{"awardId":100}
+25-10-24.10:37:24.260 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-10-24.10:37:24.292 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

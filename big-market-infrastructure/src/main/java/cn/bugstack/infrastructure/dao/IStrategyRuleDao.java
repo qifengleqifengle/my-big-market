@@ -12,4 +12,6 @@ public interface IStrategyRuleDao {
     List<StrategyRule> queryStrategyRuleList();
     // 根据条件查询规则
     StrategyRule queryStrategyRule(StrategyRule strategyRuleReq);
+    // 根据规则获取值
+    String queryStrategyRuleValue(StrategyRule strategyRule);
 }
