@@ -2,7 +2,7 @@ package cn.bugstack.domain.strategy.service.rule.impl;
 
 import cn.bugstack.domain.strategy.model.entity.RuleActionEntity;
 import cn.bugstack.domain.strategy.model.entity.RuleMatterEntity;
-import cn.bugstack.domain.strategy.model.vo.RuleLogicCheckTypeVO;
+import cn.bugstack.domain.strategy.model.valobj.RuleLogicCheckTypeVO;
 import cn.bugstack.domain.strategy.repository.IStrategyRepository;
 import cn.bugstack.domain.strategy.service.annotation.LogicStrategy;
 import cn.bugstack.domain.strategy.service.rule.ILogicFilter;
@@ -12,8 +12,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
-
-import static java.util.stream.IntStream.builder;
 
 @Slf4j
 @Component

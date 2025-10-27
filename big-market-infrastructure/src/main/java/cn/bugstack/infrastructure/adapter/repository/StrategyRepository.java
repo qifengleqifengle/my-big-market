@@ -3,6 +3,7 @@ package cn.bugstack.infrastructure.adapter.repository;
 import cn.bugstack.domain.strategy.model.entity.StrategyAwardEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity;
+import cn.bugstack.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 import cn.bugstack.domain.strategy.repository.IStrategyRepository;
 import cn.bugstack.infrastructure.dao.IStrategyAwardDao;
 import cn.bugstack.infrastructure.dao.IStrategyDao;
@@ -72,6 +73,7 @@ public class StrategyRepository implements IStrategyRepository {
         return getRateRange(String.valueOf(strategyId));
     }
 
+    // 获取策略对应的概率范围值
     @Override
     public int getRateRange(String key) {
         return redisService.getValue(Constants.RedisKey.STRATEGY_RATE_RANGE_KEY + key);
@@ -122,6 +124,7 @@ public class StrategyRepository implements IStrategyRepository {
 
     }
 
+    // 查询策略规则值
     @Override
     public String queryStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel) {
         StrategyRule strategyRule = new StrategyRule();
@@ -129,5 +132,15 @@ public class StrategyRepository implements IStrategyRepository {
         strategyRule.setAwardId(awardId);
         strategyRule.setRuleModel(ruleModel);
         return strategyRuleDao.queryStrategyRuleValue(strategyRule);
+    }
+
+    // 查询策略奖品规则模型
+    @Override
+    public StrategyAwardRuleModelVO queryStrategyAwardRuleModel(Long strategyId, Integer awardId) {
+        StrategyAward strategyAward = new StrategyAward();
+        strategyAward.setStrategyId(strategyId);
+        strategyAward.setAwardId(awardId);
+        String ruleModels = strategyAwardDao.queryStrategyAwardRuleModels(strategyAward);
+        return StrategyAwardRuleModelVO.builder().ruleModels(ruleModels).build();
     }
 }
