@@ -33,6 +33,9 @@ public interface IStrategyRepository {
     StrategyRuleEntity queryStrategyRule(Long strategyId, String ruleModel);
 
     // 查询策略规则值
+    String queryStrategyRuleValue(Long strategyId, String ruleModel);
+
+    // 查询策略规则值
     String queryStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel);
 
     // 查询策略奖品规则模型
