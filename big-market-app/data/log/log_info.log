@@ -1,35 +1,55 @@
-25-11-06.10:44:30.850 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13h40m1s30ms81µs100ns).
-25-11-06.10:44:30.988 [main            ] INFO  RaffleStrategyTest     - 抽奖结果:{"awardConfig":"1, 100","awardId":101}
-25-11-06.10:44:31.421 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-11-06.10:44:31.450 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
-25-11-06.10:44:55.929 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 11948 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
-25-11-06.10:44:55.930 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
-25-11-06.10:44:57.639 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-25-11-06.10:44:57.658 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-25-11-06.10:44:57.770 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 0 Redis repository interfaces.
-25-11-06.10:45:03.605 [main            ] INFO  Version                - Redisson 3.23.4
-25-11-06.10:45:05.990 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
-25-11-06.10:45:06.024 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
-25-11-06.10:45:17.959 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-25-11-06.10:45:18.084 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 23.017 seconds (JVM running for 24.851)
-25-11-06.10:45:20.198 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
-25-11-06.10:45:22.032 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
-25-11-06.10:45:22.440 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
-25-11-06.10:45:22.451 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
-25-11-06.10:45:22.461 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
-25-11-06.10:45:22.471 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
-25-11-06.10:45:22.481 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
-25-11-06.10:45:22.492 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
-25-11-06.10:46:37.052 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: default awardId: 102
-25-11-06.10:46:48.662 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 default 102
-25-11-06.10:48:08.075 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s890ms897µs400ns).
-25-11-06.10:51:22.575 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m14s501ms899µs800ns).
-25-11-06.10:52:21.466 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58s891ms589µs500ns).
-25-11-06.10:53:30.903 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m9s437ms515µs700ns).
-25-11-06.10:54:52.370 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s468ms474µs400ns).
-25-11-06.10:55:34.468 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_lock code: 0000
-25-11-06.11:01:09.677 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m35s231ms332µs800ns).
-25-11-06.10:55:34.463 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x9411c16a, L:/127.0.0.1:60271 - R:127.0.0.1/127.0.0.1:6379]
+25-11-07.11:09:24.269 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 42344 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-07.11:09:24.271 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-11-07.11:09:27.109 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.11:09:27.119 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.11:09:27.197 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 0 Redis repository interfaces.
+25-11-07.11:09:32.014 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-07.11:09:33.787 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.11:09:33.829 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.11:10:06.467 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.11:10:06.582 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 43.48 seconds (JVM running for 46.631)
+25-11-07.11:10:07.688 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-11-07.11:10:08.944 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-11-07.11:10:09.853 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.11:10:09.886 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.11:10:09.916 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.11:10:09.942 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.11:10:09.965 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.11:10:24.738 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.11:10:46.412 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.11:10:53.584 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.11:10:53.712 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: default awardId: 102
+25-11-07.11:10:53.717 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 default 102
+25-11-07.11:10:53.815 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId: xiaofuge strategyId: 100006 awardId: 102 
+25-11-07.11:10:53.819 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_lock code: 0000
+25-11-07.11:10:53.821 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId: xiaofuge strategyId: 100006 awardId: 102
+25-11-07.11:10:53.826 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_stock code: 0000
+25-11-07.11:10:53.861 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-11-07.11:10:53.897 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-11-07.11:11:25.350 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 38244 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-07.11:11:25.352 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-11-07.11:11:26.803 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.11:11:26.809 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.11:11:26.888 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 0 Redis repository interfaces.
+25-11-07.11:11:30.859 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-07.11:11:32.674 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.11:11:32.703 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.11:11:42.327 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.11:11:42.587 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 18.025 seconds (JVM running for 19.548)
+25-11-07.11:12:01.939 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.11:12:02.229 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-11-07.11:12:04.286 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-11-07.11:13:25.802 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.11:13:25.802 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s403ms314µs).
+25-11-07.11:14:39.494 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.11:16:02.416 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m51s742ms483µs800ns).
+25-11-07.11:23:22.643 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.11:23:22.643 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m20s231ms66µs400ns).
+25-11-07.11:23:31.411 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.11:23:55.273 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.11:24:00.218 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.11:24:45.934 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s974ms402µs).
+25-11-07.11:23:22.672 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0xcaa5282c, L:/127.0.0.1:64118 - R:127.0.0.1/127.0.0.1:6379]
 org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
 	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
 	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
@@ -39,11 +59,464 @@ org.redisson.client.RedisTimeoutException: Command execution timeout for command
 	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.lang.Thread.run(Thread.java:750)
-25-11-06.11:02:26.838 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s104ms729µs400ns).
-25-11-06.11:03:24.605 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_stock code: 0001
-25-11-06.11:04:23.884 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_luck_award code: 0001
-25-11-06.11:04:39.444 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 1, 100 101
-25-11-06.11:04:55.666 [main            ] INFO  RaffleStrategyTest     - 请求参数:{"strategyId":100006,"userId":"xiaofuge"}
-25-11-06.11:05:00.335 [main            ] INFO  RaffleStrategyTest     - 抽奖结果:{"awardConfig":"1, 100","awardId":101}
-25-11-06.11:05:06.115 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
-25-11-06.11:05:06.143 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-11-07.11:24:57.274 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0xf095348b, L:/127.0.0.1:64119 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-11-07.11:24:58.333 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-11-07.11:24:58.381 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-11-07.11:25:42.568 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 61632 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-07.11:25:42.570 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-11-07.11:25:44.097 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.11:25:44.105 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.11:25:44.172 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 0 Redis repository interfaces.
+25-11-07.11:25:48.078 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-07.11:25:49.977 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.11:25:50.004 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.11:25:53.762 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.11:25:53.871 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 12.111 seconds (JVM running for 13.69)
+25-11-07.11:29:40.093 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.11:29:45.161 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.11:29:55.145 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.11:30:22.910 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.11:30:55.334 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.11:44:42.481 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 57004 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-07.11:44:42.482 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-11-07.11:44:44.004 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.11:44:44.013 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.11:44:44.068 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+25-11-07.11:44:47.787 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-07.11:44:49.538 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.11:44:49.574 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.11:44:53.097 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.11:44:53.208 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 11.432 seconds (JVM running for 12.975)
+25-11-07.11:46:17.713 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.11:46:20.175 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.11:46:36.316 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:00:18.442 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:00:26.105 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:00:31.747 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:00:35.226 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:01:26.962 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 51336 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-07.12:01:26.962 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-11-07.12:01:28.334 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.12:01:28.341 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.12:01:28.402 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 35 ms. Found 0 Redis repository interfaces.
+25-11-07.12:01:31.689 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-07.12:01:32.928 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.12:01:32.946 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.12:01:36.792 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.12:01:37.067 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 10.796 seconds (JVM running for 12.344)
+25-11-07.12:02:20.842 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:02:26.344 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:02:36.331 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:02:43.140 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:03:01.617 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:03:26.104 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:08:31.733 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 54844 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-07.12:08:31.734 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-11-07.12:08:33.217 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.12:08:33.225 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.12:08:33.291 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
+25-11-07.12:08:37.606 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-07.12:08:39.426 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.12:08:39.447 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.12:08:43.196 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.12:08:43.467 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 12.482 seconds (JVM running for 14.143)
+25-11-07.12:09:13.315 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:09:15.557 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:09:25.776 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:09:35.659 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:09:55.827 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:14:00.747 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:14:35.355 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:14:40.531 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:14:45.324 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:14:50.332 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:30:14.474 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0xe5c78673, L:/127.0.0.1:62268 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-11-07.12:30:15.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:30:20.354 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:30:25.130 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:30:30.290 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:30:37.178 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:30:45.158 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:30:50.528 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:31:00.674 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:31:05.867 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:31:10.616 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.12:32:49.817 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0xc7703f88, L:/127.0.0.1:62266 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-11-07.12:33:12.442 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 48520 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-07.12:33:12.445 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-11-07.12:33:14.000 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.12:33:14.008 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.12:33:14.079 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 0 Redis repository interfaces.
+25-11-07.12:33:18.723 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-07.12:33:20.385 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.12:33:20.403 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.12:33:24.236 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.12:33:24.501 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 12.835 seconds (JVM running for 14.404)
+25-11-07.15:46:01.748 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 20824 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-07.15:46:01.783 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-11-07.15:46:03.423 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.15:46:03.429 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.15:46:03.491 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
+25-11-07.15:46:07.145 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-07.15:46:08.638 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.15:46:08.683 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.15:46:13.082 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.15:46:13.359 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 12.485 seconds (JVM running for 14.62)
+25-11-07.15:46:25.673 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-11-07.15:46:28.118 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-11-07.15:47:20.669 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s436ms659µs200ns).
+25-11-07.15:58:04.353 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m43s15ms377µs300ns).
+25-11-07.15:59:29.304 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m24s952ms530µs100ns).
+25-11-07.16:00:38.853 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.16:00:44.929 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s363ms252µs800ns).
+25-11-07.16:01:14.942 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.16:01:14.985 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.16:01:15.004 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.16:01:15.033 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.16:01:15.053 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.16:02:28.785 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m13s847ms112µs400ns).
+25-11-07.16:06:41.173 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x78218c3a, L:/127.0.0.1:61891 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-11-07.16:06:41.318 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: default awardId: 102
+25-11-07.16:06:41.709 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 default 102
+25-11-07.16:07:12.055 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m43s272ms895µs700ns).
+25-11-07.16:08:31.581 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s145ms941µs500ns).
+25-11-07.16:08:54.691 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x7fa1b3e6, L:/127.0.0.1:61892 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-11-07.16:08:58.689 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x825ef4a6, L:/127.0.0.1:61893 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-11-07.16:10:10.756 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s621ms173µs800ns).
+25-11-07.16:10:16.343 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId: xiaofuge strategyId: 100006 awardId: 102 
+25-11-07.16:10:17.897 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_lock code: 0000
+25-11-07.16:10:56.673 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s918ms78µs400ns).
+25-11-07.16:10:56.674 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId: xiaofuge strategyId: 100006 awardId: 102
+25-11-07.16:11:56.882 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m210ms890µs500ns).
+25-11-07.16:16:15.549 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m47s740ms674µs200ns).
+25-11-07.16:24:09.917 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m54s373ms399µs700ns).
+25-11-07.16:36:46.309 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m36s399ms456µs800ns).
+25-11-07.16:44:16.279 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m55s969ms342µs500ns).
+25-11-07.16:48:31.746 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m15s471ms346µs300ns).
+25-11-07.16:51:56.265 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m24s521ms700µs500ns).
+25-11-07.16:54:24.350 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m48s669ms768µs700ns).
+25-11-07.16:54:58.381 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_stock code: 0001
+25-11-07.16:57:53.041 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m14s611ms428µs).
+25-11-07.16:57:53.042 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖 userId: xiaofuge strategyId: 100006 awardId: 102 ruleValue: 1,100
+25-11-07.16:59:59.087 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m6s46ms768µs100ns).
+25-11-07.17:00:11.969 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-11-07.17:00:11.999 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-11-07.17:02:59.502 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 52328 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-07.17:02:59.504 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-11-07.17:03:00.881 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.17:03:00.889 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.17:03:00.957 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 0 Redis repository interfaces.
+25-11-07.17:03:04.935 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-07.17:03:06.957 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.17:03:06.978 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.17:03:10.746 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.17:03:11.026 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 12.452 seconds (JVM running for 14.041)
+25-11-07.17:03:12.404 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-11-07.17:03:13.291 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-11-07.17:03:13.660 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:03:13.679 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:03:13.699 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:03:13.713 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:03:13.733 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:03:13.745 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:03:27.081 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: default awardId: 102
+25-11-07.17:03:27.969 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 default 102
+25-11-07.17:04:05.179 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId: xiaofuge strategyId: 100006 awardId: 102 
+25-11-07.17:04:05.183 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_lock code: 0000
+25-11-07.17:04:05.185 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId: xiaofuge strategyId: 100006 awardId: 102
+25-11-07.17:04:54.025 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_stock code: 0001
+25-11-07.17:04:54.025 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖 userId: xiaofuge strategyId: 100006 awardId: 102 ruleValue: 1,100
+25-11-07.17:05:17.257 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId: xiaofuge strategyId: 100006 awardId: 1 awardRuleValue: 100
+25-11-07.17:05:28.353 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_luck_award code: 0001
+25-11-07.17:05:38.749 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 100 1
+25-11-07.17:05:48.679 [main            ] INFO  RaffleStrategyTest     - 请求参数:{"strategyId":100006,"userId":"xiaofuge"}
+25-11-07.17:05:54.499 [main            ] INFO  RaffleStrategyTest     - 抽奖结果:{"awardConfig":"100","awardId":1}
+25-11-07.17:14:28.181 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m33s705ms181µs200ns).
+25-11-07.17:14:28.197 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: default awardId: 102
+25-11-07.17:14:28.198 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 default 102
+25-11-07.17:14:28.209 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId: xiaofuge strategyId: 100006 awardId: 102 
+25-11-07.17:14:28.210 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_lock code: 0000
+25-11-07.17:14:28.210 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId: xiaofuge strategyId: 100006 awardId: 102
+25-11-07.17:14:28.220 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_stock code: 0001
+25-11-07.17:14:28.220 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖 userId: xiaofuge strategyId: 100006 awardId: 102 ruleValue: 1,100
+25-11-07.17:14:28.220 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId: xiaofuge strategyId: 100006 awardId: 1 awardRuleValue: 100
+25-11-07.17:14:28.220 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_luck_award code: 0001
+25-11-07.17:14:28.220 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 100 1
+25-11-07.17:14:28.220 [main            ] INFO  RaffleStrategyTest     - 请求参数:{"strategyId":100006,"userId":"xiaofuge"}
+25-11-07.17:14:28.220 [main            ] INFO  RaffleStrategyTest     - 抽奖结果:{"awardConfig":"100","awardId":1}
+25-11-07.17:14:28.230 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: default awardId: 102
+25-11-07.17:14:28.231 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 default 102
+25-11-07.17:14:28.237 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId: xiaofuge strategyId: 100006 awardId: 102 
+25-11-07.17:14:28.238 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_lock code: 0000
+25-11-07.17:14:28.238 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId: xiaofuge strategyId: 100006 awardId: 102
+25-11-07.17:14:28.248 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_stock code: 0001
+25-11-07.17:14:28.248 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖 userId: xiaofuge strategyId: 100006 awardId: 102 ruleValue: 1,100
+25-11-07.17:14:28.248 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId: xiaofuge strategyId: 100006 awardId: 1 awardRuleValue: 100
+25-11-07.17:14:28.248 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_luck_award code: 0001
+25-11-07.17:14:28.248 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 100 1
+25-11-07.17:14:28.249 [main            ] INFO  RaffleStrategyTest     - 请求参数:{"strategyId":100006,"userId":"xiaofuge"}
+25-11-07.17:14:28.249 [main            ] INFO  RaffleStrategyTest     - 抽奖结果:{"awardConfig":"100","awardId":1}
+25-11-07.17:14:28.319 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-11-07.17:14:28.352 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-11-07.17:14:37.606 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 18724 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-07.17:14:37.608 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-11-07.17:14:38.995 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.17:14:39.003 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.17:14:39.085 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 0 Redis repository interfaces.
+25-11-07.17:14:42.513 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-07.17:14:46.633 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 48028 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-07.17:14:46.635 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-11-07.17:14:47.830 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.17:14:47.835 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.17:14:47.903 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 0 Redis repository interfaces.
+25-11-07.17:14:49.944 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-07.17:14:51.016 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.17:14:51.037 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.17:14:53.550 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.17:14:53.620 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.671 seconds (JVM running for 8.805)
+25-11-07.17:14:54.094 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-11-07.17:14:54.488 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-11-07.17:14:54.610 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:14:54.642 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:14:54.660 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:14:54.670 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:14:54.686 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:14:54.698 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:14:54.710 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: default awardId: 102
+25-11-07.17:14:54.711 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 default 102
+25-11-07.17:14:54.740 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId: xiaofuge strategyId: 100006 awardId: 102 
+25-11-07.17:14:54.741 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_lock code: 0000
+25-11-07.17:14:54.742 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId: xiaofuge strategyId: 100006 awardId: 102
+25-11-07.17:14:54.793 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_stock code: 0001
+25-11-07.17:14:54.793 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖 userId: xiaofuge strategyId: 100006 awardId: 102 ruleValue: 1,100
+25-11-07.17:14:54.793 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId: xiaofuge strategyId: 100006 awardId: 1 awardRuleValue: 100
+25-11-07.17:14:54.793 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_luck_award code: 0001
+25-11-07.17:14:54.793 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 100 1
+25-11-07.17:14:55.023 [main            ] INFO  RaffleStrategyTest     - 请求参数:{"strategyId":100006,"userId":"xiaofuge"}
+25-11-07.17:14:55.027 [main            ] INFO  RaffleStrategyTest     - 抽奖结果:{"awardConfig":"100","awardId":1}
+25-11-07.17:14:55.037 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: default awardId: 102
+25-11-07.17:14:55.037 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 default 102
+25-11-07.17:14:55.043 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId: xiaofuge strategyId: 100006 awardId: 102 
+25-11-07.17:14:55.043 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_lock code: 0000
+25-11-07.17:14:55.043 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId: xiaofuge strategyId: 100006 awardId: 102
+25-11-07.17:14:55.049 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_stock code: 0001
+25-11-07.17:14:55.050 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖 userId: xiaofuge strategyId: 100006 awardId: 102 ruleValue: 1,100
+25-11-07.17:14:55.050 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId: xiaofuge strategyId: 100006 awardId: 1 awardRuleValue: 100
+25-11-07.17:14:55.050 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_luck_award code: 0001
+25-11-07.17:14:55.050 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 100 1
+25-11-07.17:14:55.050 [main            ] INFO  RaffleStrategyTest     - 请求参数:{"strategyId":100006,"userId":"xiaofuge"}
+25-11-07.17:14:55.050 [main            ] INFO  RaffleStrategyTest     - 抽奖结果:{"awardConfig":"100","awardId":1}
+25-11-07.17:14:55.057 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: default awardId: 102
+25-11-07.17:14:55.058 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 default 102
+25-11-07.17:14:55.063 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId: xiaofuge strategyId: 100006 awardId: 102 
+25-11-07.17:14:55.063 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_lock code: 0000
+25-11-07.17:14:55.063 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId: xiaofuge strategyId: 100006 awardId: 102
+25-11-07.17:14:55.069 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_stock code: 0001
+25-11-07.17:14:55.069 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖 userId: xiaofuge strategyId: 100006 awardId: 102 ruleValue: 1,100
+25-11-07.17:14:55.069 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId: xiaofuge strategyId: 100006 awardId: 1 awardRuleValue: 100
+25-11-07.17:14:55.069 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_luck_award code: 0001
+25-11-07.17:14:55.069 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 100 1
+25-11-07.17:14:55.069 [main            ] INFO  RaffleStrategyTest     - 请求参数:{"strategyId":100006,"userId":"xiaofuge"}
+25-11-07.17:14:55.069 [main            ] INFO  RaffleStrategyTest     - 抽奖结果:{"awardConfig":"100","awardId":1}
+25-11-07.17:15:39.068 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-11-07.17:15:39.095 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-11-07.17:16:03.521 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 59468 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-07.17:16:03.523 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-11-07.17:16:04.803 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.17:16:04.807 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.17:16:04.854 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+25-11-07.17:16:06.659 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-07.17:16:07.706 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.17:16:07.732 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.17:16:10.125 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.17:16:10.213 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.275 seconds (JVM running for 8.423)
+25-11-07.17:16:10.734 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-11-07.17:16:11.117 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-11-07.17:16:11.237 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:16:11.257 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:16:11.273 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:16:11.284 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:16:11.302 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:16:11.317 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:16:11.330 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: default awardId: 102
+25-11-07.17:16:11.332 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 default 102
+25-11-07.17:16:11.366 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId: xiaofuge strategyId: 100006 awardId: 102 
+25-11-07.17:16:11.367 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_lock code: 0000
+25-11-07.17:16:11.368 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId: xiaofuge strategyId: 100006 awardId: 102
+25-11-07.17:16:11.425 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_stock code: 0001
+25-11-07.17:16:11.425 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖 userId: xiaofuge strategyId: 100006 awardId: 102 ruleValue: 1,100
+25-11-07.17:16:11.425 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId: xiaofuge strategyId: 100006 awardId: 1 awardRuleValue: 100
+25-11-07.17:16:11.425 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_luck_award code: 0001
+25-11-07.17:16:11.427 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 100 1
+25-11-07.17:16:11.646 [main            ] INFO  RaffleStrategyTest     - 请求参数:{"strategyId":100006,"userId":"xiaofuge"}
+25-11-07.17:16:11.651 [main            ] INFO  RaffleStrategyTest     - 抽奖结果:{"awardConfig":"100","awardId":1}
+25-11-07.17:16:11.658 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: default awardId: 102
+25-11-07.17:16:11.658 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 default 102
+25-11-07.17:16:11.662 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId: xiaofuge strategyId: 100006 awardId: 102 
+25-11-07.17:16:11.662 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_lock code: 0000
+25-11-07.17:16:11.663 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId: xiaofuge strategyId: 100006 awardId: 102
+25-11-07.17:16:11.669 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_stock code: 0001
+25-11-07.17:16:11.669 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖 userId: xiaofuge strategyId: 100006 awardId: 102 ruleValue: 1,100
+25-11-07.17:16:11.669 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId: xiaofuge strategyId: 100006 awardId: 1 awardRuleValue: 100
+25-11-07.17:16:11.669 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_luck_award code: 0001
+25-11-07.17:16:11.669 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 100 1
+25-11-07.17:16:11.669 [main            ] INFO  RaffleStrategyTest     - 请求参数:{"strategyId":100006,"userId":"xiaofuge"}
+25-11-07.17:16:11.669 [main            ] INFO  RaffleStrategyTest     - 抽奖结果:{"awardConfig":"100","awardId":1}
+25-11-07.17:16:11.675 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: default awardId: 102
+25-11-07.17:16:11.676 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 default 102
+25-11-07.17:16:11.682 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId: xiaofuge strategyId: 100006 awardId: 102 
+25-11-07.17:16:11.682 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_lock code: 0000
+25-11-07.17:16:11.682 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId: xiaofuge strategyId: 100006 awardId: 102
+25-11-07.17:16:11.688 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_stock code: 0001
+25-11-07.17:16:11.688 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖 userId: xiaofuge strategyId: 100006 awardId: 102 ruleValue: 1,100
+25-11-07.17:16:11.688 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId: xiaofuge strategyId: 100006 awardId: 1 awardRuleValue: 100
+25-11-07.17:16:11.688 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_luck_award code: 0001
+25-11-07.17:16:11.688 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006 100 1
+25-11-07.17:16:11.688 [main            ] INFO  RaffleStrategyTest     - 请求参数:{"strategyId":100006,"userId":"xiaofuge"}
+25-11-07.17:16:11.688 [main            ] INFO  RaffleStrategyTest     - 抽奖结果:{"awardConfig":"100","awardId":1}
+25-11-07.17:16:15.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:16:15.020 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存-开始 strategyId: 100006 awardId: 102
+25-11-07.17:16:20.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:16:20.019 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存-开始 strategyId: 100006 awardId: 102
+25-11-07.17:16:25.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:16:25.021 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存-开始 strategyId: 100006 awardId: 102
+25-11-07.17:16:30.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:16:30.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存-开始 strategyId: 100006 awardId: 102
+25-11-07.17:16:35.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:16:35.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存-开始 strategyId: 100006 awardId: 102
+25-11-07.17:16:40.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:16:40.023 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存-开始 strategyId: 100006 awardId: 102
+25-11-07.17:16:45.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:16:45.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存-开始 strategyId: 100006 awardId: 102
+25-11-07.17:16:50.017 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:16:50.020 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存-开始 strategyId: 100006 awardId: 102
+25-11-07.17:16:55.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:16:55.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存-开始 strategyId: 100006 awardId: 102
+25-11-07.17:17:00.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:17:00.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存-开始 strategyId: 100006 awardId: 102
+25-11-07.17:17:05.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:17:10.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:17:15.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:17:20.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:17:25.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:17:30.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:17:35.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:17:40.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:17:45.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:17:50.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:17:55.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:18:00.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:18:05.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:18:10.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:18:15.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:18:20.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:18:25.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:18:30.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:18:35.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:18:40.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:18:45.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:18:50.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:18:55.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-07.17:18:55.524 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-11-07.17:18:55.544 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+25-11-07.17:19:44.478 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 24368 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-07.17:19:44.480 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+25-11-07.17:19:45.599 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-07.17:19:45.606 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-07.17:19:45.664 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36 ms. Found 0 Redis repository interfaces.
+25-11-07.17:19:47.505 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-07.17:19:48.708 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.17:19:48.738 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-07.17:19:50.922 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-07.17:19:50.998 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 7.064 seconds (JVM running for 8.141)
+25-11-07.17:19:51.429 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+25-11-07.17:19:52.130 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+25-11-07.17:19:52.553 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:19:52.584 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:19:52.618 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:19:52.641 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:19:52.676 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:19:52.707 [main            ] INFO  RaffleStrategyTest     - 策略装配结果：true
+25-11-07.17:19:52.751 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: default awardId: 102
+25-11-07.17:19:52.752 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 default 102
+25-11-07.17:19:52.799 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId: xiaofuge strategyId: 100006 awardId: 102 
+25-11-07.17:19:52.800 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_lock code: 0000
+25-11-07.17:19:52.802 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId: xiaofuge strategyId: 100006 awardId: 102
+25-11-07.17:19:52.847 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_stock code: 0001
+25-11-07.17:19:52.847 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006  102
+25-11-07.17:19:53.239 [main            ] INFO  RaffleStrategyTest     - 请求参数:{"strategyId":100006,"userId":"xiaofuge"}
+25-11-07.17:19:53.247 [main            ] INFO  RaffleStrategyTest     - 抽奖结果:{"awardConfig":"","awardId":102}
+25-11-07.17:19:53.259 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: default awardId: 102
+25-11-07.17:19:53.262 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 default 102
+25-11-07.17:19:53.282 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId: xiaofuge strategyId: 100006 awardId: 102 
+25-11-07.17:19:53.282 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_lock code: 0000
+25-11-07.17:19:53.282 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId: xiaofuge strategyId: 100006 awardId: 102
+25-11-07.17:19:53.295 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_stock code: 0001
+25-11-07.17:19:53.296 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006  102
+25-11-07.17:19:53.296 [main            ] INFO  RaffleStrategyTest     - 请求参数:{"strategyId":100006,"userId":"xiaofuge"}
+25-11-07.17:19:53.296 [main            ] INFO  RaffleStrategyTest     - 抽奖结果:{"awardConfig":"","awardId":102}
+25-11-07.17:19:53.307 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: xiaofuge strategyId: 100006 ruleModel: default awardId: 102
+25-11-07.17:19:53.309 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-责任链 xiaofuge 100006 default 102
+25-11-07.17:19:53.324 [main            ] INFO  RuleLockLogicTreeNode  - 规则过滤-次数锁 userId: xiaofuge strategyId: 100006 awardId: 102 
+25-11-07.17:19:53.325 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_lock code: 0000
+25-11-07.17:19:53.325 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减 userId: xiaofuge strategyId: 100006 awardId: 102
+25-11-07.17:19:53.341 [main            ] INFO  DecisionTreeEngine     - 决策树引擎[规则树] treeId: tree_lock node: rule_stock code: 0001
+25-11-07.17:19:53.341 [main            ] INFO  AbstractRaffleStrategy - 抽奖策略计算-规则树 xiaofuge 100006  102
+25-11-07.17:19:53.341 [main            ] INFO  RaffleStrategyTest     - 请求参数:{"strategyId":100006,"userId":"xiaofuge"}
+25-11-07.17:19:53.341 [main            ] INFO  RaffleStrategyTest     - 抽奖结果:{"awardConfig":"","awardId":102}
+25-11-07.17:19:53.423 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+25-11-07.17:19:53.450 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

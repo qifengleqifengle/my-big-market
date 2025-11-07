@@ -36,8 +36,9 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
 
         while(null != nextNode){
             ILogicTreeNode logicTreeNode = logicTreeNodeGroup.get(ruleTreeNode.getRuleKey());
+            String ruleValue = ruleTreeNode.getRuleValue();
 
-            DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId);
+            DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId, ruleValue);
             RuleLogicCheckTypeVO ruleLogicCheckTypeVO = logicEntity.getRuleLogicCheckType();
             strategyAwardData = logicEntity.getStrategyAwardVO();
 
@@ -53,16 +54,19 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
     }
 
     private String nextNode(String matterValue, List<RuleTreeNodeLineVO> ruleTreeNodeLineVOList){
+        // 没有线也就没有下一个节点，直接返回null
         if(null == ruleTreeNodeLineVOList || ruleTreeNodeLineVOList.isEmpty()){
             return null;
         }
-
+        // 遍历决策树线，找到符合条件的下一个节点
         for(RuleTreeNodeLineVO nodeLine : ruleTreeNodeLineVOList){
             if(decisionLogic(matterValue, nodeLine)){
                 return nodeLine.getRuleNodeTo();
             }
         }
-        throw new RuntimeException("决策树找不到符合的下一个节点");
+        // 没有符合条件的下一个节点，返回null 有线连接到下一个节点 但是无法到达也直接返回null
+        return null;
+        //throw new RuntimeException("决策树找不到符合的下一个节点");
     }
 
 

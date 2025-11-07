@@ -5,6 +5,7 @@ import cn.bugstack.domain.strategy.model.entity.StrategyEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity;
 import cn.bugstack.domain.strategy.model.valobj.RuleTreeVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
+import cn.bugstack.domain.strategy.model.valobj.StrategyAwardStockKeyVO;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
@@ -44,4 +45,19 @@ public interface IStrategyRepository {
 
     // 查询规则树
     RuleTreeVO queryRuleTreeVOByTreeId(String treeId);
+
+    // 缓存策略奖品库存
+    void cacheStrategyAwardCount(String cacheKey, Integer awardCount);
+
+    // 扣减策略奖品库存
+    Boolean subtractionAwardStock(String cacheKey);
+
+    // 发送奖品库存扣减消息到队列
+    void awardStockConsumeSendQueue(StrategyAwardStockKeyVO strategyAwardStockKeyVO);
+
+    // 获取奖品库存消耗队列
+    StrategyAwardStockKeyVO takeQueueValue();
+
+    // 更新奖品库存消耗记录
+    void updateStrategyAwardStock(Long strategyId, Integer awardId);
 }

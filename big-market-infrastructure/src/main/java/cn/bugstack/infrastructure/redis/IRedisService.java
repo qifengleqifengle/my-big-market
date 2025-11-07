@@ -240,4 +240,27 @@ public interface IRedisService {
      */
     <T> RBloomFilter<T> getBloomFilter(String key);
 
+    /**
+     * 获取原子长整型
+     *
+     * @param key 键
+     * @return 原子长整型
+     */
+    Long getAtomicLong(String key);
+
+    /**
+     * 设置原子长整型
+     *
+     * @param key 键
+     * @param value 值
+     */
+    void setAtomicLong(String key, Integer value);
+
+    /**
+     * 设置锁，如果不存在则设置成功
+     *
+     * @param key 锁键
+     * @return 是否设置成功
+     */
+    Boolean setNx(String key);
 }
