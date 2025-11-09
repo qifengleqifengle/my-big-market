@@ -19,7 +19,11 @@
             <groupId>jakarta.validation</groupId>
             <artifactId>jakarta.validation-api</artifactId>
             <version>3.0.2</version>
-        </dependency>
+        </dependency>        <dependency>
+        <groupId>com.gt.market</groupId>
+        <artifactId>big-market-types</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </dependency>
     </dependencies>
 
     <build>

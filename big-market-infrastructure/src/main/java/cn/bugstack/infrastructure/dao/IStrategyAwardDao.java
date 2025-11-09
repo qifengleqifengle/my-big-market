@@ -16,4 +16,6 @@ public interface IStrategyAwardDao {
     String queryStrategyAwardRuleModels(StrategyAward strategyAward);
     // 更新策略奖品库存
     void updateStrategyAwardStock(StrategyAward strategyAward);
+    // 查询单个策略奖品信息
+    StrategyAward queryStrategyAward(StrategyAward strategyAwardReq);
 }
