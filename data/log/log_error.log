@@ -6147,3 +6147,4 @@ java.lang.NullPointerException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:750)
+25-11-09.19:41:35.951 [http-nio-8091-exec-22] ERROR IRaffleController      - 随机抽奖失败 strategyId：100005 big_market_strategy_rate_range_key_100005:抽奖策略配置未装配，请通过IStrategyArmory接口进行装配
