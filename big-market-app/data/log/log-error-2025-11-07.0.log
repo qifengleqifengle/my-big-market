@@ -1,0 +1,112 @@
+25-11-07.11:13:25.802 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s403ms314µs).
+25-11-07.11:16:02.416 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m51s742ms483µs800ns).
+25-11-07.11:23:22.643 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m20s231ms66µs400ns).
+25-11-07.11:24:45.934 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s974ms402µs).
+25-11-07.11:23:22.672 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0xcaa5282c, L:/127.0.0.1:64118 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-11-07.11:24:57.274 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0xf095348b, L:/127.0.0.1:64119 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-11-07.11:24:58.386 [main            ] WARN  TestContextManager     - Caught exception while invoking 'afterTestClass' callback on TestExecutionListener [org.springframework.test.context.event.EventPublishingTestExecutionListener@1757cd72] for test class [class cn.bugstack.test.domain.RaffleStrategyTest]
+java.lang.IllegalStateException: The ApplicationContext loaded for [[WebMergedContextConfiguration@7748410a testClass = RaffleStrategyTest, locations = '{}', classes = '{class cn.bugstack.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@aecb35a, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@382db087, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@de3a06f, org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@f4168b8, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@49c43f4e, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@34cd072c], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]] is not active. This may be due to one of the following reasons: 1) the context was closed programmatically by user code; 2) the context was closed during parallel test execution either according to @DirtiesContext semantics or due to automatic eviction from the ContextCache due to a maximum cache size policy.
+	at org.springframework.util.Assert.state(Assert.java:97)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:128)
+	at org.springframework.test.context.TestContext.publishEvent(TestContext.java:94)
+	at org.springframework.test.context.event.EventPublishingTestExecutionListener.afterTestClass(EventPublishingTestExecutionListener.java:168)
+	at org.springframework.test.context.TestContextManager.afterTestClass(TestContextManager.java:492)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:77)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+25-11-07.12:30:14.474 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0xe5c78673, L:/127.0.0.1:62268 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-11-07.12:32:49.817 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0xc7703f88, L:/127.0.0.1:62266 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-11-07.15:47:20.669 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s436ms659µs200ns).
+25-11-07.15:58:04.353 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m43s15ms377µs300ns).
+25-11-07.15:59:29.304 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m24s952ms530µs100ns).
+25-11-07.16:00:44.929 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s363ms252µs800ns).
+25-11-07.16:02:28.785 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m13s847ms112µs400ns).
+25-11-07.16:06:41.173 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x78218c3a, L:/127.0.0.1:61891 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-11-07.16:07:12.055 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m43s272ms895µs700ns).
+25-11-07.16:08:31.581 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s145ms941µs500ns).
+25-11-07.16:08:54.691 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x7fa1b3e6, L:/127.0.0.1:61892 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-11-07.16:08:58.689 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x825ef4a6, L:/127.0.0.1:61893 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-11-07.16:10:10.756 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s621ms173µs800ns).
+25-11-07.16:10:56.673 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=45s918ms78µs400ns).
+25-11-07.16:11:56.882 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m210ms890µs500ns).
+25-11-07.16:16:15.549 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m47s740ms674µs200ns).
+25-11-07.16:24:09.917 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m54s373ms399µs700ns).
+25-11-07.16:36:46.309 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m36s399ms456µs800ns).
+25-11-07.16:44:16.279 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m55s969ms342µs500ns).
+25-11-07.16:48:31.746 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m15s471ms346µs300ns).
+25-11-07.16:51:56.265 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m24s521ms700µs500ns).
+25-11-07.16:54:24.350 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m48s669ms768µs700ns).
+25-11-07.16:57:53.041 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m14s611ms428µs).
+25-11-07.16:59:59.087 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m6s46ms768µs100ns).
+25-11-07.17:14:28.181 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m33s705ms181µs200ns).
