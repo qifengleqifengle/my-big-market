@@ -1,21 +1,28 @@
-package cn.bugstack.infrastructure.dao.po;
+package cn.bugstack.domain.activity.model.entity;
 
+import cn.bugstack.domain.activity.model.valobj.OrderStateVO;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
 @Data
-public class RaffleActivityOrder {
-
-    /**
-     * 自增ID
-     */
-    private Long id;
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class ActivityOrderEntity {
 
     /**
      * 用户ID
      */
     private String userId;
+
+    /**
+     * sku
+     */
+    private Long sku;
 
     /**
      * 活动ID
@@ -60,15 +67,11 @@ public class RaffleActivityOrder {
     /**
      * 订单状态
      */
-    private String state;
+    private OrderStateVO state;
 
     /**
-     * 创建时间
+     * 业务仿重ID - 外部透传的，确保幂等
      */
-    private Date createTime;
+    private String outBusinessNo;
 
-    /**
-     * 更新时间
-     */
-    private Date updateTime;
 }
