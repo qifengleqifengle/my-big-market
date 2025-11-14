@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ActivityShopCartEntity {
+public class SkuRechargeEntity {
 
     /**
      * 用户ID
@@ -20,4 +20,9 @@ public class ActivityShopCartEntity {
      * 商品SKU
      */
     private Long sku;
+
+    /**
+     * 幂等单号，外部谁充值的唯一标识，多次充值也能保证幂等
+     */
+    private String outBusinessNo;
 }
