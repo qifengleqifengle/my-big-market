@@ -2,6 +2,8 @@ package cn.bugstack.infrastructure.redis;
 
 import org.redisson.api.*;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * Redis 服务
  * @author Fuzhengwei bugstack.cn @小傅哥
@@ -263,4 +265,14 @@ public interface IRedisService {
      * @return 是否设置成功
      */
     Boolean setNx(String key);
+
+    /**
+     * 设置锁，如果不存在则设置成功，并设置过期时间
+     *
+     * @param key      锁键
+     * @param expired  过期时间
+     * @param timeUnit 时间单位
+     * @return 是否设置成功
+     */
+    Boolean setNx(String key, long expired, TimeUnit timeUnit);
 }
