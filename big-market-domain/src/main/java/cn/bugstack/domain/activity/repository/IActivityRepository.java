@@ -1,9 +1,8 @@
 package cn.bugstack.domain.activity.repository;
 
-import cn.bugstack.domain.activity.model.aggregate.CreateOrderAggregate;
-import cn.bugstack.domain.activity.model.entity.ActivityCountEntity;
-import cn.bugstack.domain.activity.model.entity.ActivityEntity;
-import cn.bugstack.domain.activity.model.entity.ActivitySkuEntity;
+import cn.bugstack.domain.activity.model.aggregate.CreatePartakeOrderAggregate;
+import cn.bugstack.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
+import cn.bugstack.domain.activity.model.entity.*;
 import cn.bugstack.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 
 import java.util.Date;
@@ -17,7 +16,7 @@ public interface IActivityRepository {
     // 查询抽奖活动个人次数信息
     ActivityCountEntity queryRaffleActivityCountByActivityCountId(Long activityCountId);
     // 保存订单信息
-    void doSaveOrder(CreateOrderAggregate createOrderAggregate);
+    void doSaveOrder(CreateQuotaOrderAggregate createOrderAggregate);
     // 缓存活动商品SKU库存数量
     void cacheActivitySkuStockCount(String cacheKey, Integer stockCount);
     // 扣减活动商品SKU库存数量
@@ -32,4 +31,14 @@ public interface IActivityRepository {
     void updateActivitySkuStock(Long sku);
     // 清空数据库活动商品SKU库存
     void clearActivitySkuStock(Long sku);
+    // 保存参与订单信息
+    void saveCreatePartakeOrderAggregate(CreatePartakeOrderAggregate createPartakeOrderAggregate);
+    // 查询未使用的抽奖订单
+    UserRaffleOrderEntity queryNoUsedRaffleOrder(PartakeRaffleActivityEntity partakeRaffleActivityEntity);
+    // 查询用户活动账户信息
+    ActivityAccountEntity queryActivityAccountByUserId(String userId, Long activityId);
+    // 查询用户活动日账户信息
+    ActivityAccountMonthEntity queryActivityAccountMonthByUserId(String userId, Long activityId, String month);
+    // 查询用户活动日账户信息
+    ActivityAccountDayEntity queryActivityAccountDayByUserId(String userId, Long activityId, String day);
 }

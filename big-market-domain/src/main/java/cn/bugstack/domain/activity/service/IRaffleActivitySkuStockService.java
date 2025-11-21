@@ -2,7 +2,7 @@ package cn.bugstack.domain.activity.service;
 
 import cn.bugstack.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 
-public interface ISkuStock {
+public interface IRaffleActivitySkuStockService {
 
     // 获取商品库存消耗队列
     ActivitySkuStockKeyVO takeQueueValue() throws InterruptedException;

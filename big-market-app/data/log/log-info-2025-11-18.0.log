@@ -1,0 +1,1206 @@
+25-11-18.19:43:33.689 [main            ] INFO  RaffleOrderTest        - Starting RaffleOrderTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 50020 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-18.19:43:33.690 [main            ] INFO  RaffleOrderTest        - The following 1 profile is active: "dev"
+25-11-18.19:43:35.750 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-18.19:43:35.761 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-18.19:43:35.865 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 0 Redis repository interfaces.
+25-11-18.19:43:40.597 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-18.19:43:41.693 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.19:43:41.711 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.19:43:41.977 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'updateActivitySkuStock': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'raffleActivityService' defined in file [C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-domain\target\classes\cn\bugstack\domain\activity\service\RaffleActivityService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultActivityChainFactory' defined in file [C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-domain\target\classes\cn\bugstack\domain\activity\service\rule\factory\DefaultActivityChainFactory.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activity_sku_stock_action': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.domain.activity.service.armory.IActivityDispatch' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+25-11-18.19:43:42.048 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+25-11-18.19:43:42.147 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in cn.bugstack.domain.activity.service.rule.factory.DefaultActivityChainFactory required a bean of type 'cn.bugstack.domain.activity.service.armory.IActivityDispatch' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.bugstack.domain.activity.service.armory.IActivityDispatch' in your configuration.
+
+25-11-18.19:43:42.160 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@2d2ffcb7] to prepare test instance [cn.bugstack.test.domain.activity.RaffleOrderTest@7de35070]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'updateActivitySkuStock': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'raffleActivityService' defined in file [C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-domain\target\classes\cn\bugstack\domain\activity\service\RaffleActivityService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultActivityChainFactory' defined in file [C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-domain\target\classes\cn\bugstack\domain\activity\service\rule\factory\DefaultActivityChainFactory.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activity_sku_stock_action': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.domain.activity.service.armory.IActivityDispatch' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	... 27 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'raffleActivityService' defined in file [C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-domain\target\classes\cn\bugstack\domain\activity\service\RaffleActivityService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultActivityChainFactory' defined in file [C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-domain\target\classes\cn\bugstack\domain\activity\service\rule\factory\DefaultActivityChainFactory.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activity_sku_stock_action': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.domain.activity.service.armory.IActivityDispatch' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultActivityChainFactory' defined in file [C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-domain\target\classes\cn\bugstack\domain\activity\service\rule\factory\DefaultActivityChainFactory.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activity_sku_stock_action': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.domain.activity.service.armory.IActivityDispatch' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 61 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activity_sku_stock_action': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.domain.activity.service.armory.IActivityDispatch' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1492)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 75 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.domain.activity.service.armory.IActivityDispatch' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 90 common frames omitted
+25-11-18.19:48:18.763 [main            ] INFO  RaffleOrderTest        - Starting RaffleOrderTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 50304 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-18.19:48:18.765 [main            ] INFO  RaffleOrderTest        - The following 1 profile is active: "dev"
+25-11-18.19:48:20.807 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-18.19:48:20.814 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-18.19:48:20.896 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 0 Redis repository interfaces.
+25-11-18.19:48:24.479 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-18.19:48:25.566 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.19:48:25.585 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.19:48:27.318 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'updateActivitySkuStock': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'raffleActivityService' defined in file [C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-domain\target\classes\cn\bugstack\domain\activity\service\RaffleActivityService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultActivityChainFactory' defined in file [C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-domain\target\classes\cn\bugstack\domain\activity\service\rule\factory\DefaultActivityChainFactory.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activity_sku_stock_action': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityArmory': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.domain.activity.event.ActivitySkuStockZeroMessageEvent' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+25-11-18.19:48:27.412 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+25-11-18.19:48:27.476 [main            ] ERROR LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in cn.bugstack.domain.activity.service.rule.factory.DefaultActivityChainFactory required a bean of type 'cn.bugstack.domain.activity.event.ActivitySkuStockZeroMessageEvent' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'cn.bugstack.domain.activity.event.ActivitySkuStockZeroMessageEvent' in your configuration.
+
+25-11-18.19:48:27.488 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@2d2ffcb7] to prepare test instance [cn.bugstack.test.domain.activity.RaffleOrderTest@7d64a960]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:231)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'updateActivitySkuStock': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'raffleActivityService' defined in file [C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-domain\target\classes\cn\bugstack\domain\activity\service\RaffleActivityService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultActivityChainFactory' defined in file [C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-domain\target\classes\cn\bugstack\domain\activity\service\rule\factory\DefaultActivityChainFactory.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activity_sku_stock_action': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityArmory': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.domain.activity.event.ActivitySkuStockZeroMessageEvent' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	... 27 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'raffleActivityService' defined in file [C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-domain\target\classes\cn\bugstack\domain\activity\service\RaffleActivityService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultActivityChainFactory' defined in file [C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-domain\target\classes\cn\bugstack\domain\activity\service\rule\factory\DefaultActivityChainFactory.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activity_sku_stock_action': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityArmory': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.domain.activity.event.ActivitySkuStockZeroMessageEvent' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'defaultActivityChainFactory' defined in file [C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-domain\target\classes\cn\bugstack\domain\activity\service\rule\factory\DefaultActivityChainFactory.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activity_sku_stock_action': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityArmory': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.domain.activity.event.ActivitySkuStockZeroMessageEvent' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 61 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activity_sku_stock_action': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityArmory': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.domain.activity.event.ActivitySkuStockZeroMessageEvent' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1492)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 75 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityArmory': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.domain.activity.event.ActivitySkuStockZeroMessageEvent' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 90 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.domain.activity.event.ActivitySkuStockZeroMessageEvent' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 106 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.bugstack.domain.activity.event.ActivitySkuStockZeroMessageEvent' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 120 common frames omitted
+25-11-18.19:52:42.000 [main            ] INFO  RaffleOrderTest        - Starting RaffleOrderTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 22636 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-18.19:52:42.001 [main            ] INFO  RaffleOrderTest        - The following 1 profile is active: "dev"
+25-11-18.19:52:43.754 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-18.19:52:43.762 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-18.19:52:43.847 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 0 Redis repository interfaces.
+25-11-18.19:52:47.670 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-18.19:52:48.589 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.19:52:48.608 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.19:52:54.309 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-18.19:52:54.506 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-11-18.19:52:54.755 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5da57a64:0/SimpleConnection@b56d8a7 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 64138]
+25-11-18.19:52:55.260 [main            ] INFO  RaffleOrderTest        - Started RaffleOrderTest in 14.001 seconds (JVM running for 15.592)
+25-11-18.19:52:56.398 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-11-18.19:52:58.057 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-11-18.19:52:58.690 [main            ] INFO  RaffleOrderTest        - 装配活动：true
+25-11-18.19:53:25.521 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.19:54:14.295 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.19:54:44.334 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.19:54:51.868 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.19:54:51.874 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.19:55:42.186 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m615ms904µs300ns).
+25-11-18.19:55:42.186 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.19:55:42.198 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.19:56:25.359 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.19:56:32.052 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.19:56:39.397 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.19:56:39.399 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.19:56:41.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.19:56:53.044 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.19:56:56.368 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.19:56:58.190 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.707 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:25:21.704 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=28m25s352ms693µs800ns).
+25-11-18.20:25:21.758 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.758 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.793 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.794 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.803 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.803 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.814 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.814 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.824 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.824 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.832 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.832 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.840 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.841 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.847 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.847 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.855 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.855 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.862 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.862 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.869 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.870 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.876 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.876 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.882 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.882 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.891 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.891 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.897 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.897 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.904 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.904 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.912 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.912 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.917 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.917 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:21.923 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:25:21.923 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:25:22.016 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-11-18.20:25:22.016 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-11-18.20:25:22.022 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-11-18.20:25:27.198 [main            ] INFO  RaffleOrderTest        - Starting RaffleOrderTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 40992 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-18.20:25:27.200 [main            ] INFO  RaffleOrderTest        - The following 1 profile is active: "dev"
+25-11-18.20:25:28.979 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-18.20:25:28.993 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-18.20:25:29.130 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82 ms. Found 0 Redis repository interfaces.
+25-11-18.20:25:33.402 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-18.20:25:34.498 [redisson-netty-2-5] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.20:25:34.524 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.20:25:40.076 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-18.20:25:40.273 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-11-18.20:25:40.555 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5da57a64:0/SimpleConnection@b56d8a7 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 62942]
+25-11-18.20:25:41.065 [main            ] INFO  RaffleOrderTest        - Started RaffleOrderTest in 14.607 seconds (JVM running for 16.413)
+25-11-18.20:25:42.269 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-11-18.20:25:43.112 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-11-18.20:25:43.738 [main            ] INFO  RaffleOrderTest        - 装配活动：true
+25-11-18.20:29:28.955 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:29:28.956 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=3m45s734ms821µs500ns).
+25-11-18.20:29:32.700 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:29:45.883 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  SimpleMessageListenerContainer - Restarting Consumer@6c6919ff: tags=[[amq.ctag-9Q32FTlL4tH-ZHr1Kx7gDg]], channel=Cached Rabbit Channel: AMQChannel(amqp://admin@127.0.0.1:5672/,1), conn: Proxy@5a63fa71 Shared Rabbit Connection: SimpleConnection@b56d8a7 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 62942], acknowledgeMode=AUTO local queue size=0
+25-11-18.20:29:46.761 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-11-18.20:29:46.778 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:29:47.123 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5da57a64:1/SimpleConnection@56cebdf8 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 50212]
+25-11-18.20:29:50.595 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:30:04.232 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:30:04.232 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.465 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m56s239ms529µs400ns).
+25-11-18.20:32:00.475 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:32:00.481 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.494 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.494 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.535 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.535 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.543 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.544 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.550 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-11-18.20:32:00.555 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.556 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.564 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.565 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.572 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.572 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.579 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.579 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.587 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.587 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.594 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.594 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.600 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.601 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.608 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.608 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.615 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.615 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.622 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.622 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.632 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.632 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.640 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.640 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.648 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.648 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.656 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.656 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.663 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.663 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:00.669 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:32:00.670 [main            ] WARN  RaffleOrderTest        - 活动未开启(非open状态)
+25-11-18.20:32:01.479 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-11-18.20:32:01.485 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-11-18.20:33:20.270 [main            ] INFO  RaffleOrderTest        - Starting RaffleOrderTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 20328 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-18.20:33:20.272 [main            ] INFO  RaffleOrderTest        - The following 1 profile is active: "dev"
+25-11-18.20:33:22.113 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-18.20:33:22.122 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-18.20:33:22.222 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 0 Redis repository interfaces.
+25-11-18.20:33:25.780 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-18.20:33:26.869 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.20:33:26.891 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.20:33:32.367 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-18.20:33:32.578 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-11-18.20:33:32.755 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#64dfb31d:0/SimpleConnection@24ac6fef [delegate=amqp://admin@127.0.0.1:5672/, localPort= 55150]
+25-11-18.20:33:32.981 [main            ] INFO  RaffleOrderTest        - Started RaffleOrderTest in 13.45 seconds (JVM running for 15.044)
+25-11-18.20:33:34.146 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-11-18.20:33:35.016 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:33:35.169 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:33:35.169 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-11-18.20:33:35.805 [main            ] INFO  RaffleOrderTest        - 装配活动：true
+25-11-18.20:34:00.674 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:34:01.622 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:34:06.585 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:34:08.791 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:34:10.030 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:34:10.034 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:34:16.283 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:34:16.288 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:34:16.289 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:34:52.281 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:34:52.284 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=45s697ms413µs300ns).
+25-11-18.20:35:43.499 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=51s217ms298µs900ns).
+25-11-18.20:35:43.499 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:36:56.940 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m13s442ms27µs400ns).
+25-11-18.20:36:56.948 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:36:56.951 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:37:23.184 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:37:23.242 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:37:28.454 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:37:36.011 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:38:19.158 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=50s711ms476µs500ns).
+25-11-18.20:38:19.160 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:38:46.347 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:37:23.244 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x6af0e0b0, L:/127.0.0.1:55145 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-11-18.20:38:46.352 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:38:59.637 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:40:05.014 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m15s701ms48µs700ns).
+25-11-18.20:41:01.525 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=56s512ms15µs300ns).
+25-11-18.20:41:23.664 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:42:20.124 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m18s599ms526µs500ns).
+25-11-18.20:42:20.142 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:42:20.174 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:42:25.620 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:42:25.623 [redisson-timer-4-1] ERROR PingConnectionHandler  - Unable to send PING command over channel: [id: 0x9370636d, L:/127.0.0.1:55142 - R:127.0.0.1/127.0.0.1:6379]
+org.redisson.client.RedisTimeoutException: Command execution timeout for command: (PING), params: [], Redis client: [addr=redis://127.0.0.1:6379]
+	at org.redisson.client.RedisConnection.lambda$async$0(RedisConnection.java:256)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:750)
+25-11-18.20:42:25.657 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:42:43.678 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:42:43.682 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:42:43.697 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.20:43:01.405 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-11-18.20:43:01.435 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-11-18.20:43:01.446 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-11-18.20:43:01.874 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:43:02.417 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-11-18.20:43:02.426 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-11-18.20:43:44.985 [main            ] INFO  RaffleOrderTest        - Starting RaffleOrderTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 49364 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-18.20:43:44.986 [main            ] INFO  RaffleOrderTest        - The following 1 profile is active: "dev"
+25-11-18.20:43:46.740 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-18.20:43:46.749 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-18.20:43:46.834 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 0 Redis repository interfaces.
+25-11-18.20:43:50.484 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-18.20:43:51.776 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.20:43:51.826 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.20:43:57.255 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-18.20:43:57.514 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-11-18.20:43:57.666 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5da57a64:0/SimpleConnection@b56d8a7 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 51779]
+25-11-18.20:43:57.911 [main            ] INFO  RaffleOrderTest        - Started RaffleOrderTest in 13.73 seconds (JVM running for 15.338)
+25-11-18.20:43:59.176 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-11-18.20:44:00.010 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:44:00.166 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:44:00.167 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-11-18.20:44:00.714 [main            ] INFO  RaffleOrderTest        - 装配活动：true
+25-11-18.20:44:23.946 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:44:25.431 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:44:30.638 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:44:32.183 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:44:36.115 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:44:36.120 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:44:39.754 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:44:40.218 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:44:41.186 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:44:46.244 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:44:46.250 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:44:46.250 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:44:54.528 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:44:56.705 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:45:00.253 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:45:06.861 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:45:07.587 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:45:10.926 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:45:27.379 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:45:35.652 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:45:35.668 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:45:35.673 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:45:44.569 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:54:32.437 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:54:32.437 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=8m59s343ms164µs200ns).
+25-11-18.20:54:33.739 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:54:35.041 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:54:35.083 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  SimpleMessageListenerContainer - Restarting Consumer@6c6919ff: tags=[[amq.ctag-7RIizJqLl52A6e_r0WKT9g]], channel=Cached Rabbit Channel: AMQChannel(amqp://admin@127.0.0.1:5672/,1), conn: Proxy@5a63fa71 Shared Rabbit Connection: SimpleConnection@b56d8a7 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 51779], acknowledgeMode=AUTO local queue size=0
+25-11-18.20:54:35.086 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:54:36.178 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-11-18.20:54:44.507 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:55:48.841 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.20:55:49.057 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] ERROR SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpIOException: java.io.IOException
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:603)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:725)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:676)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:650)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:540)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.access$1600(CachingConnectionFactory.java:100)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1418)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2216)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2183)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2163)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:463)
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:447)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1942)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1915)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1384)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1230)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129)
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125)
+	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:449)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1225)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1173)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:641)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:616)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:566)
+	... 16 common frames omitted
+Caused by: com.rabbitmq.client.AlreadyClosedException: connection is already closed due to connection error; cause: java.io.EOFException
+	at com.rabbitmq.client.impl.AMQChannel.ensureIsOpen(AMQChannel.java:258)
+	at com.rabbitmq.client.impl.AMQChannel.transmit(AMQChannel.java:427)
+	at com.rabbitmq.client.impl.AMQChannel.transmit(AMQChannel.java:421)
+	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:434)
+	... 21 common frames omitted
+25-11-18.20:55:49.057 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-11-18.20:55:49.287 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:55:49.679 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5da57a64:2/SimpleConnection@d4febce [delegate=amqp://admin@127.0.0.1:5672/, localPort= 58201]
+25-11-18.20:55:50.284 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:55:52.234 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:55:55.101 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:55:55.466 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:01.640 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:07.184 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:10.912 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:11.672 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:16.398 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:16.723 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:21.770 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:21.775 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:25.287 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-11-18.20:56:25.289 [scheduling-1    ] ERROR TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis server response timeout (3000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 127.0.0.1/127.0.0.1:6379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [strategy_award_count_queue_key_], channel: [id: 0xfd78ec1b, L:/127.0.0.1:51560 - R:127.0.0.1/127.0.0.1:6379]; nested exception is org.redisson.client.RedisResponseTimeoutException: Redis server response timeout (3000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 127.0.0.1/127.0.0.1:6379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [strategy_award_count_queue_key_], channel: [id: 0xfd78ec1b, L:/127.0.0.1:51560 - R:127.0.0.1/127.0.0.1:6379]
+	at org.redisson.spring.data.connection.RedissonExceptionConverter.convert(RedissonExceptionConverter.java:48)
+	at org.redisson.spring.data.connection.RedissonExceptionConverter.convert(RedissonExceptionConverter.java:35)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.redisson.spring.data.connection.RedissonConnectionFactory.translateExceptionIfPossible(RedissonConnectionFactory.java:91)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at cn.bugstack.infrastructure.adapter.repository.StrategyRepository$$EnhancerBySpringCGLIB$$32ad1467.takeQueueValue(<generated>)
+	at cn.bugstack.domain.strategy.service.raffle.DefaultRaffleStrategy.takeQueueValue(DefaultRaffleStrategy.java:55)
+	at cn.bugstack.trigger.job.UpdateAwardStockJob.exec(UpdateAwardStockJob.java:22)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.redisson.client.RedisResponseTimeoutException: Redis server response timeout (3000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 127.0.0.1/127.0.0.1:6379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [strategy_award_count_queue_key_], channel: [id: 0xfd78ec1b, L:/127.0.0.1:51560 - R:127.0.0.1/127.0.0.1:6379]
+	at org.redisson.command.RedisExecutor.lambda$scheduleResponseTimeout$9(RedisExecutor.java:407)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+25-11-18.20:56:25.290 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:25.321 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-11-18.20:56:25.921 [main            ] INFO  RaffleOrderTest        - 测试结果：347838559299
+25-11-18.20:56:32.581 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:33.627 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:37.237 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:39.321 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:41.965 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:41.971 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:49.704 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:50.984 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:56:50.986 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:56:50.986 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:55.474 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:56:55.478 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:57:03.849 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:57:03.849 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:57:03.852 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:57:05.078 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:57:09.681 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:57:13.292 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:57:14.579 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.20:57:14.733 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:57:14.862 [main            ] INFO  RaffleOrderTest        - 测试结果：817922385128
+25-11-18.20:57:16.946 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:57:21.825 [scheduling-1    ] ERROR TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.dao.QueryTimeoutException: Redis server response timeout (3000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 127.0.0.1/127.0.0.1:6379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [strategy_award_count_queue_key_], channel: [id: 0xfd78ec1b, L:/127.0.0.1:51560 - R:127.0.0.1/127.0.0.1:6379]; nested exception is org.redisson.client.RedisResponseTimeoutException: Redis server response timeout (3000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 127.0.0.1/127.0.0.1:6379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [strategy_award_count_queue_key_], channel: [id: 0xfd78ec1b, L:/127.0.0.1:51560 - R:127.0.0.1/127.0.0.1:6379]
+	at org.redisson.spring.data.connection.RedissonExceptionConverter.convert(RedissonExceptionConverter.java:48)
+	at org.redisson.spring.data.connection.RedissonExceptionConverter.convert(RedissonExceptionConverter.java:35)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.redisson.spring.data.connection.RedissonConnectionFactory.translateExceptionIfPossible(RedissonConnectionFactory.java:91)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at cn.bugstack.infrastructure.adapter.repository.StrategyRepository$$EnhancerBySpringCGLIB$$32ad1467.takeQueueValue(<generated>)
+	at cn.bugstack.domain.strategy.service.raffle.DefaultRaffleStrategy.takeQueueValue(DefaultRaffleStrategy.java:55)
+	at cn.bugstack.trigger.job.UpdateAwardStockJob.exec(UpdateAwardStockJob.java:22)
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+Caused by: org.redisson.client.RedisResponseTimeoutException: Redis server response timeout (3000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 127.0.0.1/127.0.0.1:6379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [strategy_award_count_queue_key_], channel: [id: 0xfd78ec1b, L:/127.0.0.1:51560 - R:127.0.0.1/127.0.0.1:6379]
+	at org.redisson.command.RedisExecutor.lambda$scheduleResponseTimeout$9(RedisExecutor.java:407)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+25-11-18.20:57:21.825 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:57:21.848 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:57:21.848 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:57:24.169 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:57:24.222 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-11-18.20:57:24.373 [main            ] INFO  RaffleOrderTest        - 测试结果：119030800615
+25-11-18.20:57:24.381 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:57:24.381 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:57:24.384 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:57:24.613 [main            ] INFO  RaffleOrderTest        - 测试结果：030159955598
+25-11-18.20:57:24.619 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:57:24.619 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:57:24.622 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:57:24.847 [main            ] INFO  RaffleOrderTest        - 测试结果：074438961417
+25-11-18.20:57:24.855 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:57:24.856 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:57:24.861 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:57:25.014 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:57:25.017 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:57:25.177 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-11-18.20:57:25.181 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-11-18.20:58:02.796 [main            ] INFO  RaffleOrderTest        - Starting RaffleOrderTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 46288 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-18.20:58:02.798 [main            ] INFO  RaffleOrderTest        - The following 1 profile is active: "dev"
+25-11-18.20:58:04.145 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-18.20:58:04.151 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-18.20:58:04.211 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 42 ms. Found 0 Redis repository interfaces.
+25-11-18.20:58:06.354 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-18.20:58:07.059 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.20:58:07.084 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.20:58:09.895 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-18.20:58:09.995 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-11-18.20:58:10.077 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2864f887:0/SimpleConnection@279e1422 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 65297]
+25-11-18.20:58:10.178 [main            ] INFO  RaffleOrderTest        - Started RaffleOrderTest in 8.054 seconds (JVM running for 9.146)
+25-11-18.20:58:10.518 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-11-18.20:58:10.807 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-11-18.20:58:10.941 [main            ] INFO  RaffleOrderTest        - 装配活动：true
+25-11-18.20:58:10.999 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:10.999 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:11.004 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:11.047 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-11-18.20:58:11.077 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-11-18.20:58:11.587 [main            ] INFO  RaffleOrderTest        - 测试结果：448681888854
+25-11-18.20:58:11.600 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:11.600 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:11.605 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:12.504 [main            ] INFO  RaffleOrderTest        - 测试结果：888273972135
+25-11-18.20:58:12.514 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:12.514 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:12.519 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:12.879 [main            ] INFO  RaffleOrderTest        - 测试结果：602395115415
+25-11-18.20:58:12.886 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:12.886 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:12.890 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:13.164 [main            ] INFO  RaffleOrderTest        - 测试结果：167012945924
+25-11-18.20:58:13.182 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:13.182 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:13.191 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:13.548 [main            ] INFO  RaffleOrderTest        - 测试结果：786204798224
+25-11-18.20:58:13.564 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:13.564 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:13.573 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:14.177 [main            ] INFO  RaffleOrderTest        - 测试结果：125258900247
+25-11-18.20:58:14.186 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:14.186 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:14.190 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:14.619 [main            ] INFO  RaffleOrderTest        - 测试结果：535057307817
+25-11-18.20:58:14.628 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:14.628 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:14.635 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:15.006 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:15.009 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.20:58:15.052 [main            ] INFO  RaffleOrderTest        - 测试结果：167698942842
+25-11-18.20:58:15.065 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:15.065 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:15.070 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:15.314 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:15.480 [main            ] INFO  RaffleOrderTest        - 测试结果：117723880883
+25-11-18.20:58:15.490 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:15.490 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:15.495 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:15.850 [main            ] INFO  RaffleOrderTest        - 测试结果：939623812221
+25-11-18.20:58:15.859 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:15.859 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:15.864 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:16.212 [main            ] INFO  RaffleOrderTest        - 测试结果：859714125461
+25-11-18.20:58:16.222 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:16.222 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:16.228 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:16.601 [main            ] INFO  RaffleOrderTest        - 测试结果：844011154497
+25-11-18.20:58:16.624 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:16.624 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:16.634 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:17.049 [main            ] INFO  RaffleOrderTest        - 测试结果：329820785003
+25-11-18.20:58:17.055 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:17.055 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:17.060 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:17.353 [main            ] INFO  RaffleOrderTest        - 测试结果：749115390421
+25-11-18.20:58:17.366 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:17.366 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:17.372 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:17.668 [main            ] INFO  RaffleOrderTest        - 测试结果：946711738718
+25-11-18.20:58:17.693 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:17.693 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:17.703 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:17.919 [main            ] INFO  RaffleOrderTest        - 测试结果：249560221882
+25-11-18.20:58:17.943 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:17.944 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:17.957 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:18.491 [main            ] INFO  RaffleOrderTest        - 测试结果：953213709928
+25-11-18.20:58:18.520 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:18.521 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:18.533 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:18.968 [main            ] INFO  RaffleOrderTest        - 测试结果：561404475252
+25-11-18.20:58:18.990 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:18.991 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:19.007 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.20:58:19.327 [main            ] INFO  RaffleOrderTest        - 测试结果：004941890970
+25-11-18.20:58:19.335 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.20:58:19.335 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.20:58:19.679 [main            ] INFO  EventPublisher         - 发送MQ信息 topic:activity_sku_stock_zero message: {"data":9011,"id":"45786332122","timestamp":1763470699338}
+25-11-18.20:58:19.682 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.20:58:19.727 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  ActivitySkuStockZeroCustomer - 监听活动sku库存消耗为0消息 topic: activity_sku_stock_zero message: {"data":9011,"id":"45786332122","timestamp":1763470699338}
+25-11-18.20:58:20.016 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:20.024 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.20:58:20.340 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:25.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:25.013 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:25.016 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.20:58:30.008 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:30.015 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.20:58:30.036 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:35.007 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:35.011 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.20:58:35.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:40.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:40.022 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:40.028 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.20:58:45.010 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:45.017 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.20:58:45.037 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:50.002 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:50.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:55.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:58:55.003 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:00.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:00.005 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:05.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:05.022 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:10.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:10.024 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:15.013 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:15.021 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:20.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:20.016 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:25.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:25.020 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:30.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:30.019 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:35.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:35.006 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:40.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:40.015 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:45.007 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:45.014 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:50.006 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:50.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:55.012 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.20:59:55.020 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:00.005 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:00.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:05.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:05.020 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:10.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:10.013 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:15.000 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:15.007 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:20.009 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:20.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:25.005 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:25.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:30.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:30.009 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:35.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:35.020 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:40.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:40.017 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:45.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:45.012 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:50.004 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:50.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:55.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:00:55.010 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:00.003 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:00.006 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:05.008 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:05.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:10.006 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:10.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:15.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:15.019 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:20.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:20.017 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:25.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:25.022 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:30.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:30.012 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:35.008 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:35.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:40.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:40.020 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:45.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:45.004 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:50.008 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:50.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:55.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:01:55.019 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:00.013 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:00.021 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:05.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:05.018 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:10.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:10.008 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:15.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:15.012 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:20.016 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:20.019 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:25.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:25.010 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:30.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:30.016 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:35.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:35.029 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:40.011 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:40.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:45.003 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:45.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:50.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:50.013 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:55.013 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:02:55.017 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:00.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:00.019 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:05.011 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:05.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:10.013 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:10.017 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:15.014 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:15.020 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:20.009 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:20.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:25.008 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:25.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:30.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:30.008 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:35.008 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:35.011 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:40.001 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:40.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:45.009 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:45.015 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:03:49.303 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-11-18.21:03:49.816 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-11-18.21:03:49.818 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-11-18.21:04:18.244 [main            ] INFO  RaffleOrderTest        - Starting RaffleOrderTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 26520 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-18.21:04:18.246 [main            ] INFO  RaffleOrderTest        - The following 1 profile is active: "dev"
+25-11-18.21:04:19.731 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-18.21:04:19.736 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-18.21:04:19.808 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 0 Redis repository interfaces.
+25-11-18.21:04:21.853 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-18.21:04:22.436 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.21:04:22.454 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.21:04:26.017 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-18.21:04:26.170 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-11-18.21:04:26.303 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#507049f2:0/SimpleConnection@af3295f [delegate=amqp://admin@127.0.0.1:5672/, localPort= 61135]
+25-11-18.21:04:26.419 [main            ] INFO  RaffleOrderTest        - Started RaffleOrderTest in 8.76 seconds (JVM running for 9.843)
+25-11-18.21:04:26.769 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-11-18.21:04:27.078 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-11-18.21:04:27.267 [main            ] INFO  RaffleOrderTest        - 装配活动：true
+25-11-18.21:04:27.330 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.331 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.339 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.339 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.348 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.348 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.356 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.356 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.365 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.365 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.373 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.373 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.382 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.382 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.389 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.390 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.398 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.398 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.407 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.407 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.415 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.415 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.423 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.423 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.434 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.435 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.443 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.443 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.451 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.452 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.462 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.462 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.470 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.470 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.477 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.477 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.486 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.486 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:27.506 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:04:27.506 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:04:30.005 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:04:30.027 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:04:35.006 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:04:35.009 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:04:40.004 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:04:40.006 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:04:40.416 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-11-18.21:04:40.496 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-11-18.21:04:40.501 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+25-11-18.21:05:10.413 [main            ] INFO  RaffleOrderTest        - Starting RaffleOrderTest using Java 1.8.0_462 on DESKTOP-J30R5PM with PID 45300 (started by XduAI in C:\Users\XduAI\Desktop\mystudy\xfg-infra\big-market\big-market-app)
+25-11-18.21:05:10.415 [main            ] INFO  RaffleOrderTest        - The following 1 profile is active: "dev"
+25-11-18.21:05:11.800 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+25-11-18.21:05:11.805 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+25-11-18.21:05:11.872 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 0 Redis repository interfaces.
+25-11-18.21:05:14.141 [main            ] INFO  Version                - Redisson 3.23.4
+25-11-18.21:05:14.703 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.21:05:14.730 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 127.0.0.1/127.0.0.1:6379
+25-11-18.21:05:17.876 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+25-11-18.21:05:18.028 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+25-11-18.21:05:18.100 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2864f887:0/SimpleConnection@279e1422 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 63620]
+25-11-18.21:05:18.185 [main            ] INFO  RaffleOrderTest        - Started RaffleOrderTest in 8.338 seconds (JVM running for 9.43)
+25-11-18.21:05:18.478 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-11-18.21:05:18.845 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-11-18.21:05:18.965 [main            ] INFO  RaffleOrderTest        - 装配活动：true
+25-11-18.21:05:19.037 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:19.038 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:19.043 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:19.101 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+25-11-18.21:05:19.132 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+25-11-18.21:05:19.477 [main            ] INFO  RaffleOrderTest        - 测试结果：584466951096
+25-11-18.21:05:19.485 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:19.486 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:19.492 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:19.837 [main            ] INFO  RaffleOrderTest        - 测试结果：854211624180
+25-11-18.21:05:19.844 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:19.844 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:19.849 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:20.002 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:05:20.013 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:05:20.099 [main            ] INFO  RaffleOrderTest        - 测试结果：273804077808
+25-11-18.21:05:20.105 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:20.105 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:20.109 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:20.411 [main            ] INFO  RaffleOrderTest        - 测试结果：215413343098
+25-11-18.21:05:20.418 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:20.418 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:20.422 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:21.625 [main            ] INFO  RaffleOrderTest        - 测试结果：028430971733
+25-11-18.21:05:21.632 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:21.632 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:21.636 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:21.995 [main            ] INFO  RaffleOrderTest        - 测试结果：199935788282
+25-11-18.21:05:22.022 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:22.023 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:22.037 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:22.468 [main            ] INFO  RaffleOrderTest        - 测试结果：840900542261
+25-11-18.21:05:22.489 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:22.490 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:22.502 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:22.830 [main            ] INFO  RaffleOrderTest        - 测试结果：743582203631
+25-11-18.21:05:22.837 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:22.838 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:22.841 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:23.202 [main            ] INFO  RaffleOrderTest        - 测试结果：338966424222
+25-11-18.21:05:23.209 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:23.210 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:23.213 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:23.893 [main            ] INFO  RaffleOrderTest        - 测试结果：266929679310
+25-11-18.21:05:23.916 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:23.916 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:23.925 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:24.205 [main            ] INFO  RaffleOrderTest        - 测试结果：898060013971
+25-11-18.21:05:24.211 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:24.211 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:24.214 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:24.488 [main            ] INFO  RaffleOrderTest        - 测试结果：253812585395
+25-11-18.21:05:24.496 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:24.497 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:24.500 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:24.850 [main            ] INFO  RaffleOrderTest        - 测试结果：149042304251
+25-11-18.21:05:24.862 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:24.862 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:24.867 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:25.005 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:05:25.010 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:05:25.017 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.21:05:25.339 [main            ] INFO  RaffleOrderTest        - 测试结果：458521893298
+25-11-18.21:05:25.349 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:25.349 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:25.353 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:25.708 [main            ] INFO  RaffleOrderTest        - 测试结果：855305563092
+25-11-18.21:05:25.718 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:25.718 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:25.723 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:26.034 [main            ] INFO  RaffleOrderTest        - 测试结果：378688914307
+25-11-18.21:05:26.044 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:26.045 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:26.051 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:26.290 [main            ] INFO  RaffleOrderTest        - 测试结果：108856238247
+25-11-18.21:05:26.296 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:26.296 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:26.299 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:26.599 [main            ] INFO  RaffleOrderTest        - 测试结果：900057283056
+25-11-18.21:05:26.607 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:26.607 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:26.610 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理 【有效期、状态、库存(sku)】成功。sku:9011 activityId:100301
+25-11-18.21:05:26.907 [main            ] INFO  RaffleOrderTest        - 测试结果：363066621933
+25-11-18.21:05:26.930 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始.sku：9011 activityId: 100301
+25-11-18.21:05:26.930 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【有效期、状态、库存(sku)】开始。sku:9011 activityId:100301
+25-11-18.21:05:27.183 [main            ] INFO  EventPublisher         - 发送MQ信息 topic:activity_sku_stock_zero message: {"data":9011,"id":"63761203410","timestamp":1763471126939}
+25-11-18.21:05:27.186 [main            ] WARN  RaffleOrderTest        - 活动库存不足
+25-11-18.21:05:27.197 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  ActivitySkuStockZeroCustomer - 监听活动sku库存消耗为0消息 topic: activity_sku_stock_zero message: {"data":9011,"id":"63761203410","timestamp":1763471126939}
+25-11-18.21:05:30.001 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:05:30.010 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:05:30.017 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.21:05:35.006 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:05:35.009 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:05:35.013 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.21:05:40.003 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:05:40.007 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.21:05:40.016 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:05:45.011 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:05:45.018 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:05:45.023 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.21:05:50.008 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:05:50.015 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.21:05:50.036 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:05:55.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:05:55.017 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:05:55.022 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.21:06:00.005 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:06:00.008 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存 sku:9011 activityId:100301
+25-11-18.21:06:00.018 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:06:05.010 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:06:05.016 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:06:10.012 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:06:10.015 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:06:15.014 [scheduling-1    ] INFO  UpdateAwardStockJob    - 定时任务，更新奖品消耗库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:06:15.023 [scheduling-1    ] INFO  UpdateActivitySkuStock - 定时任务，更新活动sku库存【延迟队列获取，降低对数据库的更新频次，不要产生竞争】
+25-11-18.21:06:19.088 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+25-11-18.21:06:19.969 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+25-11-18.21:06:19.972 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped

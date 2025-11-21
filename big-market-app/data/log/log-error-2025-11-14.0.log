@@ -7,7 +7,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 1 of constructor in cn.bugstack.domain.activity.service.RaffleActivityService required a bean of type 'cn.bugstack.domain.activity.repository.IActivityRepository' that could not be found.
+Parameter 1 of constructor in cn.bugstack.domain.activity.service.quota.RaffleActivityAccountQuotaService required a bean of type 'cn.bugstack.domain.activity.repository.IActivityRepository' that could not be found.
 
 
 Action:
@@ -81,7 +81,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Parameter 1 of constructor in cn.bugstack.domain.activity.service.RaffleActivityService required a bean of type 'cn.bugstack.infrastructure.dao.IRaffleActivitySkuDao' that could not be found.
+Parameter 1 of constructor in cn.bugstack.domain.activity.service.quota.RaffleActivityAccountQuotaService required a bean of type 'cn.bugstack.infrastructure.dao.IRaffleActivitySkuDao' that could not be found.
 
 
 Action:
