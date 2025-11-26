@@ -63,4 +63,10 @@ public interface IStrategyRepository {
 
     // 查询策略奖品实体
     StrategyAwardEntity queryStrategyAwardEntity(Long strategyId, Integer awardId);
+
+    // 通过活动ID查询策略ID
+    Long queryStrategyIdByActivityId(Long activityId);
+
+    // 查询用户今日抽奖次数
+    Integer queryTodayUserRaffleCount(String userId, Long strategyId);
 }

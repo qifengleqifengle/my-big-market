@@ -23,6 +23,14 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
     @Resource
     private IStrategyRepository repository;
 
+    @Override
+    public boolean assembleLotteryStrategyByActivityId(Long activityId) {
+
+        Long strategyId = repository.queryStrategyIdByActivityId(activityId);
+
+        return assembleLotteryStrategy(strategyId);
+    }
+
     // 构建抽奖策略
     @Override
     public boolean assembleLotteryStrategy(Long strategyId) {
@@ -32,8 +40,8 @@ public class StrategyArmoryDispatch implements IStrategyArmory, IStrategyDispatc
         // 2.缓存奖品库存【用于decr扣减库存使用】
         for(StrategyAwardEntity strategyAward: strategyAwardEntities){
             Integer awardId = strategyAward.getAwardId();
-            Integer awardCount = strategyAward.getAwardCount();
-            cacheStrategyAwardCount(strategyId, awardId, awardCount);
+            Integer awardCountSurplus = strategyAward.getAwardCountSurplus();
+            cacheStrategyAwardCount(strategyId, awardId, awardCountSurplus);
         }
 
         // 3.1 默认装配配置【全量抽奖概率】

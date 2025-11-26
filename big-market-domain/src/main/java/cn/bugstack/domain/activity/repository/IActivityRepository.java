@@ -6,6 +6,7 @@ import cn.bugstack.domain.activity.model.entity.*;
 import cn.bugstack.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 
 import java.util.Date;
+import java.util.List;
 
 public interface IActivityRepository {
 
@@ -41,4 +42,6 @@ public interface IActivityRepository {
     ActivityAccountMonthEntity queryActivityAccountMonthByUserId(String userId, Long activityId, String month);
     // 查询用户活动日账户信息
     ActivityAccountDayEntity queryActivityAccountDayByUserId(String userId, Long activityId, String day);
+    // 查询活动商品SKU列表
+    List<ActivitySkuEntity> queryActivitySkuByActivityId(Long activityId);
 }

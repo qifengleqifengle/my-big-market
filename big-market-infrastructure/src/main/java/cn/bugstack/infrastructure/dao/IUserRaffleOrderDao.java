@@ -14,4 +14,7 @@ public interface IUserRaffleOrderDao {
 
     // 新增抽奖订单
     void insert(UserRaffleOrder build);
+
+    // 更新抽奖订单状态为已使用
+    int updateUserRaffleOrderStateUsed(UserRaffleOrder userRaffleOrderReq);
 }
