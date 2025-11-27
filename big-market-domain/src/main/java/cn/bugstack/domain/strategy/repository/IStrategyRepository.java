@@ -8,8 +8,10 @@ import cn.bugstack.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardStockKeyVO;
 
 import java.math.BigDecimal;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public interface IStrategyRepository {
 
@@ -52,6 +54,9 @@ public interface IStrategyRepository {
     // 扣减策略奖品库存
     Boolean subtractionAwardStock(String cacheKey);
 
+    // 扣减策略奖品库存(带过期时间)
+    Boolean subtractionAwardStock(String cacheKey, Date endDateTime);
+
     // 发送奖品库存扣减消息到队列
     void awardStockConsumeSendQueue(StrategyAwardStockKeyVO strategyAwardStockKeyVO);
 
@@ -69,4 +74,7 @@ public interface IStrategyRepository {
 
     // 查询用户今日抽奖次数
     Integer queryTodayUserRaffleCount(String userId, Long strategyId);
+
+    // 查询奖品规则锁定数量
+    Map<String, Integer> queryAwardRuleLockCount(String[] treeIds);
 }

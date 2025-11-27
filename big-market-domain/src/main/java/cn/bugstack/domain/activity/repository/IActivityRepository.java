@@ -44,4 +44,6 @@ public interface IActivityRepository {
     ActivityAccountDayEntity queryActivityAccountDayByUserId(String userId, Long activityId, String day);
     // 查询活动商品SKU列表
     List<ActivitySkuEntity> queryActivitySkuByActivityId(Long activityId);
+    // 查询用户参与某活动的当天次数
+    Integer queryRaffleActivityAccountDayPartakeCount(Long activityId, String userId);
 }

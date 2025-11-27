@@ -16,4 +16,8 @@ public interface IRaffleActivityAccountDayDao {
 
     // 新增日度账户
     void insertActivityAccountDay(RaffleActivityAccountDay raffleActivityAccountDay);
+
+    @DBRouter
+    // 统计用户当日参与抽奖次数
+    Integer queryRaffleActivityAccountDayPartakeCount(RaffleActivityAccountDay raffleActivityAccountDay);
 }

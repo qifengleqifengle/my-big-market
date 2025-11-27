@@ -1,5 +1,7 @@
 package cn.bugstack.domain.strategy.service.armory;
 
+import java.util.Date;
+
 public interface IStrategyDispatch {
 
     /**
@@ -23,6 +25,6 @@ public interface IStrategyDispatch {
      * @param awardId 奖品ID
      * @return  是否扣减成功
      */
-    Boolean subtractionAwardStock(Long strategyId, Integer awardId);
+    Boolean subtractionAwardStock(Long strategyId, Integer awardId, Date endDateTime);
 
 }
