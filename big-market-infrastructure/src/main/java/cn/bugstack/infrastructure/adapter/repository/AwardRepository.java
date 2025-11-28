@@ -66,6 +66,7 @@ public class AwardRepository implements IAwardRepository {
 
         UserRaffleOrder userRaffleOrderReq = new UserRaffleOrder();
         userRaffleOrderReq.setUserId(userAwardRecordEntity.getUserId());
+        userRaffleOrderReq.setActivityId(userAwardRecordEntity.getActivityId());
         userRaffleOrderReq.setOrderId(userAwardRecordEntity.getOrderId());
 
         try{
