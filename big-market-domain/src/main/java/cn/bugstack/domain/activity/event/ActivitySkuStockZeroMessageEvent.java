@@ -3,11 +3,12 @@ package cn.bugstack.domain.activity.event;
 import cn.bugstack.types.event.BaseEvent;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
+
 
 import java.util.Date;
 
-@Service
+@Component
 public class ActivitySkuStockZeroMessageEvent extends BaseEvent<Long> {
 
     @Value("${spring.rabbitmq.topic.activity_sku_stock_zero}")
