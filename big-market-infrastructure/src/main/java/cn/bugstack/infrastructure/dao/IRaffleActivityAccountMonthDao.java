@@ -14,4 +14,6 @@ public interface IRaffleActivityAccountMonthDao {
     // 查询月度账户
     @DBRouter
     RaffleActivityAccountMonth queryActivityAccountMonthByUserId(RaffleActivityAccountMonth raffleActivityAccountMonthReq);
+    // 新增月度账户配额
+    void addAccountQuota(RaffleActivityAccountMonth raffleActivityAccountMonth);
 }
