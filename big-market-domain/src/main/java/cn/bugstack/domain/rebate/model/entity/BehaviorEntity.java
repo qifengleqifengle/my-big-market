@@ -16,7 +16,7 @@ public class BehaviorEntity {
     private String userId;
     // 行为类型
     private BehaviorTypeVO behaviorTypeVO;
-    //
+    // 外部业务编号
     private String outBusinessNo;
 
 }

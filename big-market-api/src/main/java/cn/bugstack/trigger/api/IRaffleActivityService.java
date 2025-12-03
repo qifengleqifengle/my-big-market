@@ -2,6 +2,8 @@ package cn.bugstack.trigger.api;
 
 import cn.bugstack.trigger.api.dto.ActivityDrawRequestDTO;
 import cn.bugstack.trigger.api.dto.ActivityDrawResponseDTO;
+import cn.bugstack.trigger.api.dto.UserActivityAccountRequestDTO;
+import cn.bugstack.trigger.api.dto.UserActivityAccountResponseDTO;
 import cn.bugstack.types.model.Response;
 
 public interface IRaffleActivityService {
@@ -14,4 +16,10 @@ public interface IRaffleActivityService {
 
     // 日历签到返利接口
     Response<Boolean> calendarSignRebate(String userId);
+
+    // 是否已签到返利接口
+    Response<Boolean> isCalendarSignRebate(String userId);
+
+    // 查询用户活动账户信息
+    Response<UserActivityAccountResponseDTO> queryUserActivityAccount(UserActivityAccountRequestDTO request);
 }

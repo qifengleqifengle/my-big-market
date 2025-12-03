@@ -4,6 +4,7 @@ import cn.bugstack.domain.strategy.model.entity.StrategyAwardEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity;
 import cn.bugstack.domain.strategy.model.valobj.RuleTreeVO;
+import cn.bugstack.domain.strategy.model.valobj.RuleWeightVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardStockKeyVO;
 
@@ -77,4 +78,10 @@ public interface IStrategyRepository {
 
     // 查询奖品规则锁定数量
     Map<String, Integer> queryAwardRuleLockCount(String[] treeIds);
+
+    // 查询用户活动账户总使用次数
+    Integer queryActivityAccountTotalUseCount(String userId, Long strategyId);
+
+    // 查询策略规则权重列表
+    List<RuleWeightVO> queryAwardRuleWeight(Long strategyId);
 }

@@ -21,8 +21,6 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
     @Resource
     private IStrategyDispatch strategyDispatch;
 
-    private Long userScore = 0L;
-
     @Override
     public DefaultChainFactory.StrategyAwardVO logic(String userId, Long strategyId) {
 
@@ -40,6 +38,7 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
         List<Long> analyticalSortedKeys = new ArrayList<>(analyticalValueGroup.keySet());
         analyticalSortedKeys.sort(Collections.reverseOrder());// 降序排列
 
+        Integer userScore = repository.queryActivityAccountTotalUseCount(userId, strategyId);
         Long nextValue = analyticalSortedKeys.stream()
                 .filter(key -> userScore >= key)
                 .findFirst()

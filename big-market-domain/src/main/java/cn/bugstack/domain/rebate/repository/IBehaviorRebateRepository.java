@@ -1,6 +1,7 @@
 package cn.bugstack.domain.rebate.repository;
 
 import cn.bugstack.domain.rebate.model.aggregate.BehaviorRebateAggregate;
+import cn.bugstack.domain.rebate.model.entity.BehaviorRebateOrderEntity;
 import cn.bugstack.domain.rebate.model.valobj.BehaviorTypeVO;
 import cn.bugstack.domain.rebate.model.valobj.DailyBehaviorRebateVO;
 
@@ -14,4 +15,7 @@ public interface IBehaviorRebateRepository {
 
     // 保存用户行为返利记录
     void saveUserRebateRecord(String userId, List<BehaviorRebateAggregate> behaviorRebateAggregates);
+
+    // 根据外部业务编号查询订单
+    List<BehaviorRebateOrderEntity> queryOrderByOutBusinessNo(String userId, String outBusinessNo);
 }

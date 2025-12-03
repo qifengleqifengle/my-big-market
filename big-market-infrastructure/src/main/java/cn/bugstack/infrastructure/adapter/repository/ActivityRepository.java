@@ -24,6 +24,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.annotation.Resource;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
@@ -474,5 +475,76 @@ public class ActivityRepository implements IActivityRepository {
         raffleActivityAccountDay.setDay(raffleActivityAccountDay.currentDay());
         Integer dayPartakeCount = raffleActivityAccountDayDao.queryRaffleActivityAccountDayPartakeCount(raffleActivityAccountDay);
         return null == dayPartakeCount ? 0 : dayPartakeCount;
+    }
+
+    @Override
+    public ActivityAccountEntity queryActivityAccountEntity(Long activityId, String userId) {
+        RaffleActivityAccount raffleActivityAccount = raffleActivityAccountDao.queryActivityAccountByUserId(RaffleActivityAccount.builder()
+                .activityId(activityId)
+                .userId(userId)
+                .build());
+
+        if(null == raffleActivityAccount){
+            return ActivityAccountEntity.builder()
+                    .activityId(activityId)
+                    .userId(userId)
+                    .totalCount(0)
+                    .totalCountSurplus(0)
+                    .dayCount(0)
+                    .dayCountSurplus(0)
+                    .monthCount(0)
+                    .monthCountSurplus(0)
+                    .build();
+        }
+
+        // 查询月账户 - 需要传入当前月份
+        String month = new SimpleDateFormat("yyyy-MM").format(new Date());
+        RaffleActivityAccountMonth raffleActivityAccountMonth = raffleActivityAccountMonthDao.queryActivityAccountMonthByUserId(RaffleActivityAccountMonth.builder()
+                .activityId(activityId)
+                .userId(userId)
+                .month(month)
+                .build());
+
+        // 查询日账户 - 需要传入当前日期
+        String day = new SimpleDateFormat("yyyy-MM-dd").format(new Date());
+        RaffleActivityAccountDay raffleActivityAccountDay = raffleActivityAccountDayDao.queryActivityAccountDayByUserId(RaffleActivityAccountDay.builder()
+                .activityId(activityId)
+                .userId(userId)
+                .day(day)
+                .build());
+
+        // 组装对象
+        ActivityAccountEntity activityAccountEntity = new ActivityAccountEntity();
+        activityAccountEntity.setUserId(userId);
+        activityAccountEntity.setActivityId(activityId);
+        activityAccountEntity.setTotalCount(raffleActivityAccount.getTotalCount());
+        activityAccountEntity.setTotalCountSurplus(raffleActivityAccount.getTotalCountSurplus());
+
+        // 日、月账户可能不存在
+        if(null == raffleActivityAccountDay){
+            activityAccountEntity.setDayCount(raffleActivityAccount.getDayCount());
+            activityAccountEntity.setDayCountSurplus(raffleActivityAccount.getDayCount());
+        }else {
+            activityAccountEntity.setDayCount(raffleActivityAccountDay.getDayCount());
+            activityAccountEntity.setDayCountSurplus(raffleActivityAccountDay.getDayCountSurplus());
+        }
+        if(null == raffleActivityAccountMonth){
+            activityAccountEntity.setMonthCount(raffleActivityAccount.getMonthCount());
+            activityAccountEntity.setMonthCountSurplus(raffleActivityAccount.getMonthCount());
+        }else {
+            activityAccountEntity.setMonthCount(raffleActivityAccountMonth.getMonthCount());
+            activityAccountEntity.setMonthCountSurplus(raffleActivityAccountMonth.getMonthCountSurplus());
+        }
+
+        return activityAccountEntity;
+    }
+
+    @Override
+    public Integer queryRaffleActivityAccountPartakeCount(Long activityId, String userId) {
+        RaffleActivityAccount raffleActivityAccount = raffleActivityAccountDao.queryActivityAccountByUserId(RaffleActivityAccount.builder()
+                .activityId(activityId)
+                .userId(userId)
+                .build());
+        return raffleActivityAccount.getTotalCount() - raffleActivityAccount.getTotalCountSurplus();
     }
 }
