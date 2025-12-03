@@ -50,6 +50,8 @@ public class DefaultChainFactory {
         private Integer awardId;
         // 逻辑模型
         private String logicModel;
+        // 奖品规则值
+        private String awardRuleValue;
     }
 
     @Getter
