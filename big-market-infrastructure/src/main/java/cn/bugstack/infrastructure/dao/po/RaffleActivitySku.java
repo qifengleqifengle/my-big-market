@@ -2,6 +2,7 @@ package cn.bugstack.infrastructure.dao.po;
 
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 // 抽奖活动sku持久化对象
@@ -37,6 +38,11 @@ public class RaffleActivitySku {
      * 剩余库存量
      */
     private Integer stockCountSurplus;
+
+    /**
+     * 商品金额【积分】
+     */
+    private BigDecimal productAmount;
 
     /**
      * 创建时间

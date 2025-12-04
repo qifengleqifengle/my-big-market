@@ -12,6 +12,6 @@ public interface IUserCreditAccountDao {
     // 插入用户积分账户
     void insert(UserCreditAccount userCreditAccountReq);
 
-
+    // 查询用户积分账户
     UserCreditAccount queryUserCreditAccount(UserCreditAccount userCreditAccountReq);
 }

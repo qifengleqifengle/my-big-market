@@ -17,7 +17,9 @@ public interface IActivityRepository {
     // 查询抽奖活动个人次数信息
     ActivityCountEntity queryRaffleActivityCountByActivityCountId(Long activityCountId);
     // 保存订单信息
-    void doSaveOrder(CreateQuotaOrderAggregate createOrderAggregate);
+    void doSaveNoPayOrder(CreateQuotaOrderAggregate createOrderAggregate);
+    // 保存积分支付订单信息
+    void doSaveCreditPayOrder(CreateQuotaOrderAggregate createOrderAggregate);
     // 缓存活动商品SKU库存数量
     void cacheActivitySkuStockCount(String cacheKey, Integer stockCount);
     // 扣减活动商品SKU库存数量
@@ -50,4 +52,6 @@ public interface IActivityRepository {
     ActivityAccountEntity queryActivityAccountEntity(Long activityId, String userId);
     // 查询用户参与某活动的总次数
     Integer queryRaffleActivityAccountPartakeCount(Long activityId, String userId);
+    // 更新SKU充值订单
+    void updateOrder(DeliveryOrderEntity deliveryOrderEntity);
 }

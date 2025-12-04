@@ -1,6 +1,7 @@
 package cn.bugstack.trigger.listener;
 
 import cn.bugstack.domain.activity.model.entity.SkuRechargeEntity;
+import cn.bugstack.domain.activity.model.valobj.OrderTradeTypeVO;
 import cn.bugstack.domain.activity.service.IRaffleActivityAccountQuotaService;
 import cn.bugstack.domain.credit.model.entity.TradeEntity;
 import cn.bugstack.domain.credit.model.valobj.TradeNameVO;
@@ -42,17 +43,6 @@ public class RebateMessageCustomer {
 
             SendRebateMessageEvent.RebateMessage rebateMessage = eventMessage.getData();
 
-//            if(!RebateTypeVO.SKU.getCode().equals(rebateMessage.getRebateType())){
-//                log.info("监听用户行为返利消息 - 非sku奖励暂时不处理 topic:{} message:{}", topic, message);
-//                return;
-//            }
-//
-//            // 入账奖励
-//            SkuRechargeEntity skuRechargeEntity = new SkuRechargeEntity();
-//            skuRechargeEntity.setUserId(rebateMessage.getUserId());
-//            skuRechargeEntity.setSku(Long.valueOf(rebateMessage.getRebateConfig()));
-//            skuRechargeEntity.setOutBusinessNo(rebateMessage.getBizId());
-//            raffleActivityAccountQuotaService.createOrder(skuRechargeEntity);
             // 2. 入账奖励
             switch (rebateMessage.getRebateType()) {
                 case "sku":
@@ -60,6 +50,7 @@ public class RebateMessageCustomer {
                     skuRechargeEntity.setUserId(rebateMessage.getUserId());
                     skuRechargeEntity.setSku(Long.valueOf(rebateMessage.getRebateConfig()));
                     skuRechargeEntity.setOutBusinessNo(rebateMessage.getBizId());
+                    skuRechargeEntity.setOrderTradeType(OrderTradeTypeVO.rebate_no_pay_trade);
                     raffleActivityAccountQuotaService.createOrder(skuRechargeEntity);
                     break;
                 case "integral":

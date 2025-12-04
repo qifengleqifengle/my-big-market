@@ -1,10 +1,13 @@
 package cn.bugstack.domain.credit.service;
 
+import cn.bugstack.domain.credit.event.CreditAdjustSuccessMessageEvent;
 import cn.bugstack.domain.credit.model.aggregate.TradeAggregate;
 import cn.bugstack.domain.credit.model.entity.CreditAccountEntity;
 import cn.bugstack.domain.credit.model.entity.CreditOrderEntity;
+import cn.bugstack.domain.credit.model.entity.TaskEntity;
 import cn.bugstack.domain.credit.model.entity.TradeEntity;
 import cn.bugstack.domain.credit.repository.ICreditRepository;
+import cn.bugstack.types.event.BaseEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +19,8 @@ public class CreditAdjustService implements ICreditAdjustService{
 
     @Resource
     private ICreditRepository creditRepository;
+    @Resource
+    private CreditAdjustSuccessMessageEvent creditAdjustSuccessMessageEvent;
 
     @Override
     public String createOrder(TradeEntity tradeEntity) {
@@ -34,11 +39,23 @@ public class CreditAdjustService implements ICreditAdjustService{
                 tradeEntity.getOutBusinessNo()
         );
 
+        // 构建消息任务对象
+        // 3. 构建消息任务对象
+        CreditAdjustSuccessMessageEvent.CreditAdjustSuccessMessage creditAdjustSuccessMessage = new CreditAdjustSuccessMessageEvent.CreditAdjustSuccessMessage();
+        creditAdjustSuccessMessage.setUserId(tradeEntity.getUserId());
+        creditAdjustSuccessMessage.setOrderId(creditOrderEntity.getOrderId());
+        creditAdjustSuccessMessage.setAmount(tradeEntity.getAmount());
+        creditAdjustSuccessMessage.setOutBusinessNo(tradeEntity.getOutBusinessNo());
+        BaseEvent.EventMessage<CreditAdjustSuccessMessageEvent.CreditAdjustSuccessMessage> creditAdjustSuccessMessageEventMessage = creditAdjustSuccessMessageEvent.buildEventMessage(creditAdjustSuccessMessage);
+
+        TaskEntity taskEntity = TradeAggregate.createTaskEntity(tradeEntity.getUserId(), creditAdjustSuccessMessageEvent.topic(), creditAdjustSuccessMessageEventMessage.getId(), creditAdjustSuccessMessageEventMessage);
+
         // 构建聚合对象
         TradeAggregate tradeAggregate = TradeAggregate.builder()
                 .userId(tradeEntity.getUserId())
                 .creditAccountEntity(creditAccountEntity)
                 .creditOrderEntity(creditOrderEntity)
+                .taskEntity(taskEntity)
                 .build();
 
         // 保存聚合对象

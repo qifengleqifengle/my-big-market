@@ -11,10 +11,6 @@ public class RaffleActivityAccountQuotaSupport {
     protected DefaultActivityChainFactory defaultActivityChainFactory;
     protected IActivityRepository activityRepository;
 
-    public RaffleActivityAccountQuotaSupport(IActivityRepository activityRepository) {
-        this.activityRepository = activityRepository;
-    }
-
     public RaffleActivityAccountQuotaSupport(DefaultActivityChainFactory defaultActivityChainFactory, IActivityRepository activityRepository) {
         this.defaultActivityChainFactory = defaultActivityChainFactory;
         this.activityRepository = activityRepository;
