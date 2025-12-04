@@ -1,4 +1,4 @@
-package cn.bugstack.test.rebate;
+package cn.bugstack.test.domain.rebate;
 
 import cn.bugstack.domain.rebate.model.entity.BehaviorEntity;
 import cn.bugstack.domain.rebate.model.valobj.BehaviorTypeVO;
