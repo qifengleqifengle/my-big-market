@@ -3,12 +3,13 @@ package cn.bugstack.domain.activity.service;
 import cn.bugstack.domain.activity.model.entity.ActivityAccountEntity;
 import cn.bugstack.domain.activity.model.entity.DeliveryOrderEntity;
 import cn.bugstack.domain.activity.model.entity.SkuRechargeEntity;
+import cn.bugstack.domain.activity.model.entity.UnpaidActivityOrderEntity;
 
 
 public interface IRaffleActivityAccountQuotaService {
 
     // 创建SKU充值订单
-    String createOrder(SkuRechargeEntity skuRechargeEntity);
+    UnpaidActivityOrderEntity createOrder(SkuRechargeEntity skuRechargeEntity);
 
     // 更新SKU充值订单
     void updateOrder(DeliveryOrderEntity deliveryOrderEntity);

@@ -54,4 +54,8 @@ public interface IActivityRepository {
     Integer queryRaffleActivityAccountPartakeCount(Long activityId, String userId);
     // 更新SKU充值订单
     void updateOrder(DeliveryOrderEntity deliveryOrderEntity);
+    // 查询未支付的活动订单
+    UnpaidActivityOrderEntity queryUnpaidActivityOrder(SkuRechargeEntity skuRechargeEntity);
+    // 查询活动商品SKU列表通过活动ID
+    List<SkuProductEntity> querySkuProductEntityListByActivityId(Long activityId);
 }
